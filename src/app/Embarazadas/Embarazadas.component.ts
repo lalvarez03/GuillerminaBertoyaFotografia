@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-Embarazadas',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./Embarazadas.component.css']
 })
 export class EmbarazadasComponent implements OnInit {
-
-  constructor() { }
+  listaDeFotos!:string[];
+  constructor(
+    private appService:AppService
+  ) { }
 
   ngOnInit() {
+    this.listaDeFotos = this.appService.listarArchivosEnCarpeta('src/assets/Embarazadas')
+    console.log(this.listaDeFotos)
   }
-
 }
