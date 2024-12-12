@@ -1,0 +1,12 @@
+router-outlet{
+    height: auto;
+}
+
+.content-container{
+    min-height: 100%;
+}
+
+.bi:hover{
+    cursor: pointer; 
+    transform: scale(1.01);
+}

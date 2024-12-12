@@ -23,15 +23,18 @@
       </div>
   </div>
 </nav>
-
-<router-outlet class="w-100"></router-outlet>
+<div class="content-container">
+    <router-outlet class="d-flex align-items-center justify-content-center"></router-outlet>
+</div>
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-3">
-  <div class="container">
-      <p>&copy; 2023 Tu Nombre Fotografía. Todos los derechos reservados.</p>
-      <div class="">
-        <i class="bi bi-backpack d-flex justify-content-center align-items-center rounded-2 p-2 bg-secondary h-100 m-0 p-0"></i>
+    <div class="container">
+        <p>&copy; 2023 Tu Nombre Fotografía. Todos los derechos reservados.</p>
+        <div class="d-flex justify-content-center">
+            <div class="bi bi-whatsapp mx-3"></div>
+            <div class="bi bi-facebook mx-3"></div>
+            <div class="bi bi-instagram mx-3"></div>    
+        </div>
     </div>
-  </div>
 </footer>

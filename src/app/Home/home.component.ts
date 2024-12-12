@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,7 @@ import { AppService } from '../app.service';
 export class HomeComponent implements OnInit {
   listaDeFotos!:string[];
   constructor(
+    private router:Router,
     private appService:AppService
   ) { }
 
@@ -17,5 +19,13 @@ export class HomeComponent implements OnInit {
     console.log(this.listaDeFotos)
   }
 
-  
+  aNewBorn(){
+    this.router.navigate(['newBorn'])
+  }
+  aPrimerAnio(){
+    this.router.navigate(['primerAnio'])
+  }
+  aEmbarazadas(){
+    this.router.navigate(['embarazadas'])
+  }
 }
