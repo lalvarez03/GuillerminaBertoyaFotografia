@@ -1,0 +1,6 @@
+<div *ngIf="imagenes && imagenes.length > 0" class="carroussel-container h-50">
+  <button (click)="anterior()">Anterior</button>
+  <div [ngStyle]="{'background-image': 'url(' + imagenes[indiceActual] + ')'}" class="fondo">
+  </div>
+  <button (click)="siguiente()">Siguiente</button>
+</div>

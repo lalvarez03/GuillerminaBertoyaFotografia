@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet,Router } from '@angular/router';
 import { AppService } from './app.service';
+import { AppModule } from './app.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    AppModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   providers: [
@@ -21,5 +25,8 @@ export class AppComponent {
 
   public toHome(){
     this.router.navigate(["home"])
+  }
+  public carru(){
+    this.router.navigate(["carru"])
   }
 }

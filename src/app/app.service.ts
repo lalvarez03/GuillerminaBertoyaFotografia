@@ -10,7 +10,7 @@ export class AppService {
 constructor() { }
 
 public listarArchivosEnCarpeta(rutaCarpeta: string): string[] {
-  const listaArchivos: string[] = [];
+  /*const listaArchivos: string[] = [];
   try {
     const archivos = fs.readdirSync(rutaCarpeta);
     archivos.forEach((archivo) => {
@@ -22,6 +22,7 @@ public listarArchivosEnCarpeta(rutaCarpeta: string): string[] {
   } catch (error) {
     console.error('Error al leer la carpeta:', error);
   }
-  return listaArchivos;
+  return listaArchivos;*/
+  return []
 }
 }
