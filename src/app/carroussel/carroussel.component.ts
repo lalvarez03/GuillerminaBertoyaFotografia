@@ -23,4 +23,7 @@ export class CarrousselComponent implements OnInit {
     this.indiceActual = (this.indiceActual - 1 + this.imagenes.length) % this.imagenes.length;
   }
 
+  calcularProgreso():number{
+    return (this.indiceActual+1)/this.imagenes.length*100
+  }
 }

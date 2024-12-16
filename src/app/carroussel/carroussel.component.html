@@ -1,6 +1,15 @@
-<div *ngIf="imagenes && imagenes.length > 0" class="carroussel-container h-50">
-  <button (click)="anterior()">Anterior</button>
-  <div [ngStyle]="{'background-image': 'url(' + imagenes[indiceActual] + ')'}" class="fondo">
+<div *ngIf="imagenes && imagenes.length > 0" class="carroussel-container h-50 w-100 d-flex justify-content-center">
+  <div>
+    <button class="btn" (click)="anterior()"><i class="bi bi-arrow-left-short"></i></button>
   </div>
-  <button (click)="siguiente()">Siguiente</button>
+  <div class="container-img">
+    <div [ngStyle]="{'background-image': 'url(' + imagenes[indiceActual] + ')'}" class="fondo w-100 h-100"></div>
+    <div class="progress w-100" role="progressbar" aria-label="Basic example" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar" [ngStyle]="{'width': calcularProgreso() + '%'}"></div>
+    </div>
+  </div>
+  
+  <div>
+    <button class="btn btn-rojo" (click)="siguiente()"><i class="bi bi-arrow-right-short"></i></button>
+  </div>
 </div>

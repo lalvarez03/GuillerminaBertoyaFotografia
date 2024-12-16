@@ -1,10 +1,13 @@
-img{
-    width: auto;
+.fondo {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.container-img{
+    width: 80%;
 }
 
-.fondo {
-    width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-  }
+.progress{
+    height: 1%;
+}
