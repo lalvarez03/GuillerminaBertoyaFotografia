@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
 import { Router } from '@angular/router';
+import { fotosClientesFelices, fotosEmbarazadas, fotosHome, fotosPortfolio } from '../environment';
 
 @Component({
   selector: 'app-home',
@@ -8,15 +9,29 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  clase="Main";
   listaDeFotos!:string[];
+  listaFotosPortfolio!:string[];
+  listaFotosClientes!:[src:string,cliente:string,descripcion:string][];
   constructor(
-    private router:Router,
-    private appService:AppService
+    private router:Router
   ) { }
 
-  ngOnInit() {
-    this.listaDeFotos = this.appService.listarArchivosEnCarpeta('src/assets/New_Born')
-    console.log(this.listaDeFotos)
+  async ngOnInit() {
+      await this.setFotos()
+      console.log(this.listaDeFotos)
+    }
+  
+  setFotos(){
+    this.listaDeFotos = fotosHome.map(foto => 
+      'assets/' + this.clase + '/' + foto + '.jpg'
+    );
+    this.listaFotosPortfolio = fotosPortfolio.map(foto => 
+      'assets/' + this.clase + '/Portfolio/' + foto + '.jpg'
+    );
+    this.listaFotosClientes = fotosClientesFelices.map(foto => 
+      ['assets/' + this.clase + '/Clientes/' + foto[0] + '.jpg', foto[1], foto[2]]
+    );
   }
 
   aNewBorn(){

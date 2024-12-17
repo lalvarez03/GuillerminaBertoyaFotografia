@@ -1,0 +1,14 @@
+<div *ngIf="descripcion && descripcion.length > 0" class="carroussel-container h-50 w-100 d-flex justify-content-center">
+  <div>
+    <button class="btn" (click)="anterior()"><i class="bi bi-arrow-left-short"></i></button>
+  </div>
+  <div class="container-img">
+    <div [ngStyle]="{'background-image': 'url(' + descripcion[indiceActual][0] + ')'}" class="fondo w-100 h-100"></div>
+    <div>{{descripcion[indiceActual][1]}}</div>
+    <div>{{descripcion[indiceActual][2]}}</div>
+  </div>
+  
+  <div>
+    <button class="btn btn-rojo" (click)="siguiente()"><i class="bi bi-arrow-right-short"></i></button>
+  </div>
+</div>

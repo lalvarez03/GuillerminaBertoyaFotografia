@@ -2,8 +2,9 @@ router-outlet{
     height: auto;
 }
 
-.content-container{
-    min-height: 100%;
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.01);
 }
 
 .bi:hover{

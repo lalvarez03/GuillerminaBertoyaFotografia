@@ -5,20 +5,25 @@ import { NewBornComponent } from './NewBorn/NewBorn.component';
 import { CarrousselComponent } from './carroussel/carroussel.component';
 import { EmbarazadasComponent } from './Embarazadas/Embarazadas.component';
 import { PrimerAñoComponent } from './PrimerAño/PrimerAño.component';
+import { HomeComponent } from './Home/home.component';
+import { CarrousselClientesComponent } from './carroussel-clientes/carroussel-clientes.component';
 
 @NgModule({
   declarations: [
     NewBornComponent,
     EmbarazadasComponent,
     PrimerAñoComponent,
-    CarrousselComponent
+    HomeComponent,
+    CarrousselComponent,
+    CarrousselClientesComponent
   ],
   imports: [
     CommonModule // Importa CarrousselModule
   ],
   exports: [
     NewBornComponent,
-    CarrousselComponent
+    CarrousselComponent,
+    CarrousselClientesComponent
   ]
 })
 export class AppModule { }

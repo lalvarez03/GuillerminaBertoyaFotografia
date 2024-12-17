@@ -1,0 +1,13 @@
+.fondo {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.container-img{
+    width: 80%;
+}
+
+.progress{
+    height: 1%;
+}

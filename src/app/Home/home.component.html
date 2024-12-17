@@ -1,39 +1,44 @@
-<div class="d-flex flex-column justify-content-center align-items-center h-100">
-  <div class="d-flex flex-column align-items-stretch justify-items-center h-50 w-50 row">
-    <div (click)="aNewBorn()" class="navegar menu-new-born text-white col my-2 rounded rounded-2  shadow d-flex align-items-center justify-content-center">
-      <h2>New Born</h2>
+<div class="d-flex flex-column justify-content-between bg-white min-vh-100">
+  <div class="container-fluid p-5">
+    <div class="row flex-column flex-md-row align-items-center justify-content-around">
+      <div class="col-12 col-md-2 mb-3 mb-md-0 text-center p-0">
+        <img *ngIf="listaDeFotos && listaDeFotos.length > 0" [src]="listaDeFotos[0]" class="img-fluid object-fit-cover">
+      </div>
+      <div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
+        <h1 class="m-0">Guillermina Bertoya Fotografias</h1>
+      </div>
+      <div class="d-flex align-items-center col-12 col-md-4 text-center">
+        <img *ngIf="listaDeFotos && listaDeFotos.length > 0" [src]="listaDeFotos[1]" class="img-fluid object-fit-cover rounded rounded-2">
+      </div>
     </div>
-    <div (click)="aPrimerAnio()" class="navegar menu-embarazadas text-white col my-2 rounded rounded-2  shadow d-flex align-items-center justify-content-center">
-      <h2>Primer Año</h2>
-    </div>
-    <div (click)="aEmbarazadas()" class="navegar menu-primer-anio text-white col my-2 rounded rounded-2 shadow d-flex align-items-center justify-content-center">
-      <h2>Embarazadas</h2>
+  </div>
+  <div class="text-center p-5">
+    <p class="text-break fs-4 ">Las fotografías no son solo imágenes, son <span class="text-primary fw-bold"> portales</span>
+      que nos transportan a momentos especiales, nos conectan con nuestros seres queridos y nos permiten revivir emociones una y otra vez.
+      Cada fotografía es un <span class="text-primary fw-bold"> recuerdo congelado en el tiempo</span>.
+      Desde los primeros pasos de un bebé, hasta momentos significativos con amigos y familiares, las fotos nos permiten conservar esos instantes especiales para siempre.</p>
+  </div>
+  <div class="d-flex flex-column justify-content-center align-items-center w-100 vh-50">
+    <app-carroussel [imagenes]="listaFotosPortfolio" class="w-100 h-100"></app-carroussel>
+  </div>
+  <div class="container-fluid flex-grow-1 d-flex flex-column justify-content-center bg-background-2 m-0 p-3">
+    <h1>Sesiones</h1>
+    <div class="row vh-50 my-3">
+      <div class="col-12 col-md-8 mx-auto d-flex flex-column justify-content-around">
+        <div (click)="aNewBorn()" class="navegar menu-new-born text-white my-2 rounded rounded-2 shadow d-flex align-items-center justify-content-center flex-grow-1">
+          <h2>New Born</h2>
+        </div>
+        <div (click)="aPrimerAnio()" class="navegar menu-embarazadas text-white my-2 rounded rounded-2 shadow d-flex align-items-center justify-content-center flex-grow-1">
+          <h2>Primer Año</h2>
+        </div>
+        <div (click)="aEmbarazadas()" class="navegar menu-primer-anio text-white my-2 rounded rounded-2 shadow d-flex align-items-center justify-content-center flex-grow-1">
+          <h2>Embarazadas</h2>
+        </div>
+      </div>
     </div>
   </div>
 
-  <section id="contacto" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Contacto</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form>
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </div>
-  </section>
-  
+  <div class="d-flex flex-column justify-content-center align-items-center w-100 vh-50">
+    <app-carroussel-clientes [descripcion]="listaFotosClientes"  class="w-100 h-100"></app-carroussel-clientes>
+  </div>
 </div>

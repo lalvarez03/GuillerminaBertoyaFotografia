@@ -1,43 +1,57 @@
 <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg navbar-light bg-secondary w-100">
+<nav class="navbar navbar-expand-lg navbar-light bg-background-1 w-100 position-sticky top-0 start-0">
   <div class="container">
-      <a class="navbar-brand" href="#">Tu Nombre Fotografía</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <div class="logo col-10 col-md-2 mb-md-0 text-center p-0" (click)="toHome()">
+        <img [src]="logo" class="img-fluid object-fit-cover vh-10">
+      </div>
+      <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bi bi-camera-fill"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                  <button class="nav-link" (click)="toHome()">Inicio</button> 
-              </li>
-              <li class="nav-item">
-                <button class="nav-link" (click)="carru()">Carru</button> 
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#galeria">Galería</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#contacto">Contacto</a>
-              </li>
+          <ul class="navbar-nav ms-auto fs-5">
+            <li>
+                <a class="nav-link" href="">Información</a>
+            </li>
+            <li>
+                <a class="nav-link" href="">Clientes Felices</a>
+            </li>
+            <li>
+                <a class="nav-link" href="">Ubicación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Sesiones</a>
+                <ul class="dropdown-menu bg-secondary-darken">
+                    <li><a class="dropdown-item text-white hover-secondary-dark" (click)="toNewBorn()">New Born</a></li>
+                    <li><a class="dropdown-item text-white hover-secondary-dark" (click)="toPrimerAnio()">Primer Año</a></li>
+                    <li><a class="dropdown-item text-white hover-secondary-dark" (click)="toEmbarazadas()">Embarazadas</a></li>
+                </ul>
+                
+            </li>
+            <li>
+                <a class="nav-link" href="">Portfolio</a>
+            </li>
           </ul>
       </div>
   </div>
 </nav>
-<div class="content-container">
+
+
+<div class="flex-grow-1">
     <router-outlet class="d-flex align-items-center justify-content-center"></router-outlet>
 </div>
 
 <!-- Footer -->
-<footer class="bg-secondary text-white text-center py-3">
+<footer class="bg-background-1 text-black text-center py-3" id="contacto">
     <div class="container">
         <p>&copy; 2023 Tu Nombre Fotografía. Todos los derechos reservados.</p>
         <div class="d-flex justify-content-center">
-            <div class="bi bi-whatsapp mx-3"></div>
-            <div class="bi bi-facebook mx-3"></div>
-            <div class="bi bi-instagram mx-3"></div>    
+            <a class="bi bi-whatsapp mx-3 text-black" href="http://wa.me/5491168838722"></a>
+            <a class="bi bi-facebook mx-3 text-black" href="https://www.facebook.com/guillerminabertoya.fotografia"></a>
+            <a class="bi bi-tiktok mx-3 text-black" href="https://www.tiktok.com/@guillerminabertoya.ph"></a>
+            <a class="bi bi-instagram mx-3 text-black" href="https://www.instagram.com"></a>    
         </div>
     </div>
 </footer>
