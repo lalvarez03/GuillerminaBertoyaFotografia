@@ -47,6 +47,14 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 
 //Height    
+.h-90{
+    height: 90%;
+}
+
+.h-10{
+    height: 10%;
+}
+
 .vh-10{
     height: 10vh;
 }
@@ -64,6 +72,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 
 //Width
+.w-80{
+    width: 80%;
+}
 .w-70{
     width: 70%;
 }

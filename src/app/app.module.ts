@@ -18,7 +18,7 @@ import { CarrousselClientesComponent } from './carroussel-clientes/carroussel-cl
     CarrousselClientesComponent
   ],
   imports: [
-    CommonModule // Importa CarrousselModule
+    CommonModule
   ],
   exports: [
     NewBornComponent,

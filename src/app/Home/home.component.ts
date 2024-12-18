@@ -29,8 +29,8 @@ export class HomeComponent implements OnInit {
     this.listaFotosPortfolio = fotosPortfolio.map(foto => 
       'assets/' + this.clase + '/Portfolio/' + foto + '.jpg'
     );
-    this.listaFotosClientes = fotosClientesFelices.map(foto => 
-      ['assets/' + this.clase + '/Clientes/' + foto[0] + '.jpg', foto[1], foto[2]]
+    this.listaFotosClientes = fotosClientesFelices.map(cliente => 
+      ['assets/' + this.clase + '/Clientes/' + cliente[0] + '.jpg', cliente[1], cliente[2]]
     );
   }
 

@@ -1,23 +1,36 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
-import { fotosEmbarazadas } from '../environment';
+import { embarazadaLinks, fotosEmbarazadas } from '../environment';
+import { Sesion } from '../sesion/sesion';
 
 @Component({
   selector: 'app-Embarazadas',
   templateUrl: './Embarazadas.component.html',
   styleUrls: ['./Embarazadas.component.css']
 })
-export class EmbarazadasComponent implements OnInit {
-  clase="Embarazadas"
+export class EmbarazadasComponent extends Sesion implements OnInit {
+  clase="Embarazadas";
+  linkPlata!:string;
+  linkOro!:string;
+  linkPlatino!:string;
   listaDeFotos!:string[];
   constructor(
     private appService:AppService
-  ) { }
+  ) { super()}
 
   async ngOnInit() {
-      await this.setFotos()
-      console.log(this.listaDeFotos)
-    }
+    this.setLinks();
+    await this.setFotos();
+    console.log(this.listaDeFotos)
+  }
+
+  setLinks(){
+    this.linkPlata = embarazadaLinks.linkMercadopagoPackPlata;
+    this.linkOro = embarazadaLinks.linkMercadopagoPackOro;
+    this.linkPlatino = embarazadaLinks.linkMercadopagoPackPlatino;
+
+    console.log(this.linkPlata)
+  }
   
   setFotos(){
     this.listaDeFotos = fotosEmbarazadas.map(foto => 

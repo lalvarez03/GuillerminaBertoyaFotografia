@@ -12073,6 +12073,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.h-90 {
+  height: 90%;
+}
+
+.h-10 {
+  height: 10%;
+}
+
 .vh-10 {
   height: 10vh;
 }
@@ -12087,6 +12095,10 @@ textarea.form-control-lg {
 
 .m-h-100 {
   max-height: 100%;
+}
+
+.w-80 {
+  width: 80%;
 }
 
 .w-70 {

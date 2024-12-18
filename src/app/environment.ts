@@ -51,3 +51,21 @@ export const fotosClientesFelices:[string,string,string][] = [
         "Gracias por la paciencia y el amor con el que la trataste!!! Súper agradecidos de la calidez e el trabajo!! Seguramente nos volveremos a ver para el año de Lolita."
     ]
 ]
+
+export const newBornLinks={
+    linkMercadopagoPackPlata:"https://mpago.la/1eF3uz9",
+    linkMercadopagoPackOro:"https://mpago.la/1eF3uz9",
+    linkMercadopagoPackPlatino:"https://mpago.la/1eF3uz9",
+}
+
+export const embarazadaLinks={
+    linkMercadopagoPackPlata:"https://mpago.la/1eF3uz9",
+    linkMercadopagoPackOro:"https://mpago.la/1eF3uz9",
+    linkMercadopagoPackPlatino:"https://mpago.la/1eF3uz9",
+}
+
+export const primerAnioLinks={
+    linkMercadopagoPackPlata:"https://mpago.la/1eF3uz9",
+    linkMercadopagoPackOro:"https://mpago.la/1eF3uz9",
+    linkMercadopagoPackPlatino:"https://mpago.la/1eF3uz9",
+}
