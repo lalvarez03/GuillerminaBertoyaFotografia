@@ -6,17 +6,32 @@ export const fotosHome:string[] = [
 export const fotosNewBorn:string[] = [
     "donato-dfae5ee5-1000",
     "Emilia-14-fcce7d1f-1000",
+    "Rebecca-04-7e6b18f5-1000",
+    "Abril3-4934cf77-1000",
+    "Emma-5-a22ab48b-1000",
+    "Emma-13-b508b0f0-1000",
+    "Olivia12-c1b98fe7-1000",
     "Rebecca-04-7e6b18f5-1000"
 ]
 
 export const fotosEmbarazadas:string[] = [
     "Anita-02-1f6b0c38-2500",
     "Veronica-09-9b50b567-2500",
-    "Veronica-12-c14123fc-2500"
+    "Veronica-12-c14123fc-2500",
+    "Anita-",
+    "Anita-03-beae4a28-2500",
+    "Anita-10-4c19c8db-2500",
+    "Keylin7byn-1c94539e-2500"
 ]
 
 export const fotosPrimerAnio:string[] = [
-
+    "Donato-11-1a4a2edd-300",
+    "Donato-16-74ea1f4b-2500",
+    "Gema-13-179aaa84-2500",
+    "Gema-16-b65fec94-2500",
+    "Tomas-03-c74e2b3e-2500",
+    "Tomas-20-85c5a61e-2500",
+    "Zoe-03-13fc9816-1000"
 ]
 
 export const fotosPortfolio:string[] = [
