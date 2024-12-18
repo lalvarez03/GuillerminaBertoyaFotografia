@@ -3,21 +3,15 @@
     <button class="btn izquierda p-0" (click)="anterior()"><i class="bi bi-arrow-left-circle-fill text-primary"></i></button>
   </div>
   <div class="container-img vh-50">
-    <div class="h-90 d-flex justify-content-center">
+    <div class="h-95 d-flex justify-content-center">
       <img [src]="imagenes[indiceActual]" class="h-100 border border-primary border-3 rounded rounder-5">
     </div>
-    <div class="container-progress d-flex justify-content-center mt-3">
-      <div class="progress h-100 w-80" role="progressbar" aria-label="Basic example" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" [ngStyle]="{'width': calcularProgreso() + '%'}"></div>
-      </div>
-    </div>
-    <div class="h-10 d-flex justify-content-around">
+    <div class="h-5 d-flex justify-content-evenly align-items-center">
       <div *ngFor="let im of imagenes; let i = index">
-        <div class="dot mx-1" [class.active]="i === indiceActual"></div>
+        <div class="dot bg-background-1 mx-1" *ngIf="i !== indiceActual"></div>
+        <div class="dot active bg-primary mx-1" *ngIf="i === indiceActual"></div>
       </div>
     </div>
-    
-    
   </div>
   
   <div class="vh-50">

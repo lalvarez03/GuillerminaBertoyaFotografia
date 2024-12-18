@@ -1,15 +1,23 @@
-<div *ngIf="descripcion && descripcion.length > 0" class="carroussel-container h-50 w-100 d-flex justify-content-center">
-  <div>
-    <button class="btn" (click)="anterior()"><i class="bi bi-arrow-left-short"></i></button>
+<div *ngIf="descripcion && descripcion.length > 0" class="carroussel-container w-100 d-flex justify-content-center">
+  <div class="vh-50">
+    <button class="btn izquierda p-0" (click)="anterior()"><i class="bi bi-arrow-left-circle-fill text-secondary"></i></button>
   </div>
-  <div class="container-img">
-    <div [ngStyle]="{'background-image': 'url(' + descripcion[indiceActual][0] + ')'}" class="fondo w-100 h-100"></div>
+  <div class="container-img vh-50">
+    <div class="h-95 d-flex justify-content-center">
+      <img [src]="descripcion[indiceActual][0]" class="h-100 border border-secondary border-3 rounded rounder-5">
+    </div>
+    <div class="h-5 d-flex justify-content-evenly align-items-center">
+      <div *ngFor="let im of descripcion; let i = index">
+        <div class="dot bg-background-1 mx-1" *ngIf="i !== indiceActual"></div>
+        <div class="dot active bg-secondary mx-1" *ngIf="i === indiceActual"></div>
+      </div>
+    </div>
     <div>{{descripcion[indiceActual][1]}}</div>
     <div>{{descripcion[indiceActual][2]}}</div>
     <div>{{indiceActual+1}}/{{descripcion.length}}</div>
   </div>
   
-  <div>
-    <button class="btn btn-rojo" (click)="siguiente()"><i class="bi bi-arrow-right-short"></i></button>
+  <div class="vh-50">
+    <button class="btn derecha p-0" (click)="siguiente()"><i class="bi bi-arrow-right-circle-fill text-secondary"></i></button>
   </div>
 </div>
