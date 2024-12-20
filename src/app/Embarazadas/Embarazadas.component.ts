@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AppService } from '../app.service';
-import { embarazadaLinks, fotosEmbarazadas } from '../environment';
+import { embarazadaLinks, embarazadasPrecios, fotosEmbarazadas } from '../environment';
 import { Sesion } from '../sesion/sesion';
 
 @Component({
@@ -13,9 +12,11 @@ export class EmbarazadasComponent extends Sesion implements OnInit {
   linkPlata!:string;
   linkOro!:string;
   linkPlatino!:string;
+  precioPlata!:string;
+  precioOro!:string;
+  precioPlatino!:string;
   listaDeFotos!:string[];
   constructor(
-    private appService:AppService
   ) { super()}
 
   async ngOnInit() {
@@ -28,8 +29,9 @@ export class EmbarazadasComponent extends Sesion implements OnInit {
     this.linkPlata = embarazadaLinks.linkMercadopagoPackPlata;
     this.linkOro = embarazadaLinks.linkMercadopagoPackOro;
     this.linkPlatino = embarazadaLinks.linkMercadopagoPackPlatino;
-
-    console.log(this.linkPlata)
+    this.precioPlata = embarazadasPrecios.packPlata
+    this.precioOro = embarazadasPrecios.packOro
+    this.precioPlatino = embarazadasPrecios.packPlatino
   }
   
   setFotos(){

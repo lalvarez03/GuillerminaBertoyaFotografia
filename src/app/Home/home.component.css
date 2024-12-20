@@ -5,17 +5,6 @@ html, body, main{
     padding: 0;
 }
 
-.menu-new-born{
-    background-image: url("/assets/New_Born/donato-dfae5ee5-1000.jpg");
-}
-
-.menu-embarazadas{
-    background-image: url("/assets/New_Born/Emilia-14-fcce7d1f-1000.jpg");
-}
-
-.menu-primer-anio{
-    background-image: url("/assets/New_Born/Rebecca-04-7e6b18f5-1000.jpg");
-}
 
 .navegar{
     background-size: cover;

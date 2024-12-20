@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AppService } from '../app.service';
 import { Sesion } from '../sesion/sesion';
-import { fotosPrimerAnio, primerAnioLinks } from '../environment';
+import { fotosPrimerAnio, primerAnioLinks, primerAnioPrecios } from '../environment';
 
 @Component({
   selector: 'app-PrimerAño',
@@ -9,13 +8,15 @@ import { fotosPrimerAnio, primerAnioLinks } from '../environment';
   styleUrls: ['./PrimerAño.component.css']
 })
 export class PrimerAñoComponent extends Sesion implements OnInit {
-  clase="Primer_Anio";
+  clase="Primer_año";
   linkPlata!:string;
   linkOro!:string;
   linkPlatino!:string;
+  precioPlata!:string;
+  precioOro!:string;
+  precioPlatino!:string;
   listaDeFotos!:string[];
   constructor(
-    private appService:AppService
   ) { super()}
 
   async ngOnInit() {
@@ -28,6 +29,9 @@ export class PrimerAñoComponent extends Sesion implements OnInit {
     this.linkPlata = primerAnioLinks.linkMercadopagoPackPlata;
     this.linkOro = primerAnioLinks.linkMercadopagoPackOro;
     this.linkPlatino = primerAnioLinks.linkMercadopagoPackPlatino;
+    this.precioPlata = primerAnioPrecios.packPlata;
+    this.precioOro = primerAnioPrecios.packOro;
+    this.precioPlatino = primerAnioPrecios.packPlatino;
 
     console.log(this.linkPlata)
   }

@@ -1,5 +1,142 @@
 <div class="d-flex flex-column justify-content-center align-items-center bg-white w-100 h-100">
-    <app-carroussel [imagenes]="listaDeFotos" class="w-100 h-100"></app-carroussel>
-    <a class="btn btn-primary" [href]="linkPlata">Hacer Reserva</a>
-    <button class="btn btn-primary" (click)="copiarCBU()">Copiar CBU</button>
+    <div class="container-img w-100 vh-50" [ngStyle]="{'background-image': 'url(' + listaDeFotos[0] + ')'}">
+        <div class="capa-oscura w-100 h-100 d-flex align-items-center">
+            <h1 class="titulo text-white text-center">Sesión Recien Nacido</h1>
+        </div>
+    </div>
+    <h1 class="text-center p-5">
+        <span class="fs-1 fw-bold text-black">Bienvenido al mundo</span>
+    </h1>
+    <p class="px-5">
+        La llegada de tu bebé es un momento lleno de amor, emoción y descubrimiento. Los primeros días y semanas con tu recién nacido son tan especiales y únicos, y pasan más rápido de lo que nos damos cuenta. Capturar estos momentos a través de una sesión fotográfica es una forma maravillosa de preservar estos recuerdos tan valiosos.
+<br>        Los pequeños detalles de tu bebé, como sus diminutas manos y pies, sus delicadas expresiones faciales y su suavidad, cambian tan rápido. Una sesión de fotos permite capturar y congelar estos momentos para siempre.
+<br>        Las fotografías profesionales no solo son un recuerdo para ti, sino también un legado para tu hijo. Cuando crezca, podrá mirar atrás y ver cómo era en sus primeros días de vida, rodeado de amor y cuidado.
+<br>        Las fotos de recién nacidos son una hermosa forma de compartir la alegría y el amor que sientes con tus seres queridos. Las imágenes pueden convertirse en preciados regalos para abuelos, tíos y amigos cercanos.
+<br>        Cada foto cuenta una historia de amor y conexión. Desde las suaves caricias hasta los dulces besos, las imágenes capturan la esencia del vínculo único entre tú y tu bebé.
+<br>        A lo largo de los años, podrás mirar las fotos y revivir estos preciosos momentos. Las imágenes te recordarán el amor, la ternura y la emoción de los primeros días con tu bebé.
+<br>        Me encantaría ayudarte a capturar estos momentos tan especiales y crear recuerdos que atesorarás para siempre. Mi enfoque es hacer que tú y tu bebé se sientan cómodos y relajados, para que las fotografías reflejen la verdadera belleza de estos primeros días juntos.
+<br>        Si te interesa, me encantaría hablar contigo más sobre cómo podemos hacer esta experiencia lo más hermosa y significativa posible para ti y tu familia. Estoy aquí para ayudarte en cada paso del camino.
+<br>        Se realizan entre los 7 y 15 días de vida. Durante éste período tu bebé duerme profundamente y además mantiene la posición fetal con la cual estaba tan cómodo dentro de tu pancita. Ésto permite realizar variedad de poses sin que se despierte y tener esas tomas tan perfectas bien características de la fotografía Newborn.        
+<br>        
+<br>        <span class="fs-5 text-black">¿QUÉ INCLUYE?</span>
+<br>        Sesión fotográfica cuya duración aprox. 2hs
+<br>        Estudio climatizado continuamente.
+<br>        Equipos de calidad profesional.
+<br>        Vestuarios exclusivos y confeccionados especialmente para el recién nacido. 
+<br>        Fondos en puff y contenedores y diversidad de poses según nos permita cada bebé.
+<br>        Conocimiento anatómico y de seguridad neonatal para realizarlas 
+<br>        con absoluta seguridad y confort.
+<br>        Incluye fotos con papá y hermanos/as. (depende del pack que elijas)
+<br>        Para ver bien los diferentes paquetes y valores deslizá hacia abajo y allí los vas a ver.​
+<br>        
+<br>        <span class="fs-5 text-black">¿CUÁNDO RESERVAR?</span>
+<br>        
+<br>        Si querés agendar una sesión es importante que revises mi estilo de fotos para asegurarte que sea lo que buscás.
+<br>        Lo ideal es hacerlo cuando tengas la fecha posible de parto, agendamos un posible día y luego de ser necesario lo podemos reagendar, si éste por algún motivo se adelanta o atrasa. 
+<br>        <span class="fs-6 text-black fw-bold">Importantísimo!!!!!!</span>
+<br>        Si tu bebé ya nació es necesario hacerla antes de los 15 días de vida, caso contrario la sesión se puede realizar, pero los bebés ya no entran es sueño profundo (se despiertan más fácilmente al tacto), les gusta estar más estirados y aparecen los fatídicos cólicos que los hace sentir muy incómodos. 
+<br>        Todo estos dificulta algunas posiciones y las tomas quizá no sean las caracteristicas de la fotografía Newborn.  
+<br>        Trabajo de lunes a viernes de 9 a 18hs.
+<br>        En caso de no poder realizar la sesión un día hábil, existe la posibilidad de realizarla un día sábado, con un recargo del 20%.
+<br>        
+<br>        <span class="fs-5 text-black">ENTREGA Y VALOR</span>
+<br>        Te entrego las fotos editadas profesionalmente, en formato digital de máxima calidad, enviadas mediante un link de descarga. Las fotografías son seleccionadas por la fotógrafa según mi experiencia y criterio estético. (una carpeta en alta resolución, sin marca de agua y otra carpeta en la resolución apta para ser compartida en redes con marca de agua de la fotógrafa) Bajo ningún concepto se entrega material sin editar.
+<br>        *Los valores abajo mencionados son válido para sesiones a realizarse en el mes de Octubre 2024. Si tu sesión se realizara meses posteriores tener en cuenta que el valor se ajustará a ese mes según la inflación.
+<br>        Formas de pago: 50% al contratar el presupuesto por transferencia bancaria (no reembolsable) + 50% en efectivo el día que hacemos las fotos.
+<br>
+<br>        <span class="fs-5 text-black">LUEGO DE LA SESIÓN</span>
+<br>        La entrega del material final editado es de 10 días hábiles. Las fotos digitales se envían por link de descarga.
+<br>        Si te interesa imprimir el material consulta por los valores del laboratorio, y calcula que esto puede demorar 10 días extras.
+    </p>
+    <div class="w-100 plata my-5">
+        <div class="d-flex flex-wrap justify-content-center w-100 py-4">
+            <div class="col-10 col-lg-4 d-flex align-items-start justify-content-center text-center mb-2 mb-lg-0">
+                <h1>Pack Plata</h1>
+            </div>
+            <div class="col-10 col-lg-4 d-flex flex-column justify-content-between text-center text-lg-start mb-2 mb-lg-0 px-3">
+                <div>
+                    <h2>{{precioPlata}}</h2>
+                </div>
+                <div>
+                    <p class="text-start fs-5">10 fotografías digitales editadas profesionalmente <br>
+                        Duración aprox. 1hs <br>
+                        1 Vestuario Básico <br>
+                        Solo Puff (no contenedores) <br>
+                        No incluye fotos familiares</p>
+                </div>
+            </div>
+            <div class="img-container h-100 d-flex align-items-center d-none d-lg-flex col-lg-4">            
+                <img [src]="listaDeFotos[1]" class="vh-50 w-auto rounded border border-3 border-primary">
+            </div>
+        </div>
+        <div class="d-flex justify-content-center w-100 py-3">
+            <a class="btn btn-primary-darken" [href]="linkPlata">Hacer Reserva</a>
+        </div>
+        
+    </div>
+
+    <div class="w-100 oro my-5">
+        <div class="d-flex flex-wrap justify-content-center w-100 py-4">
+            <div class="img-container h-100 d-flex align-items-center justify-content-center d-none d-lg-flex col-lg-6">            
+                <img [src]="listaDeFotos[2]" class="vh-50 w-auto rounded border border-3 border-primary">
+            </div>
+            <div class="col-10 col-lg-2 d-flex align-items-start justify-content-center text-center mb-2 mb-lg-0">
+                <h1>Pack Oro</h1>
+            </div>
+            <div class="col-10 col-lg-4 d-flex flex-column justify-content-between text-center text-lg-start mb-2 mb-lg-0 px-3">
+                <div>
+                    <h2>{{precioOro}}</h2>
+                </div>
+                <div>
+                    <p class="text-start fs-5">
+                        15 fotografías digitales editadas profesionalmente <br>
+                        Duración aprox. 2hs <br>
+                        Cambios de vestuario (lo que nos permita el RN, max 2 <br>
+                        Wrap+1 vestuario) <br>
+                        Puff y contenedores <br>
+                        No incluye fotos familiares
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center w-100 py-3">
+            <a class="btn btn-primary-darken" [href]="linkOro">Hacer Reserva</a>
+        </div>
+        
+    </div>
+    <div class="w-100 platino my-5">
+        <div class="d-flex flex-wrap justify-content-center w-100 py-4">
+            <div class="col-10 col-lg-4 d-flex align-items-start justify-content-center text-center mb-2 mb-lg-0">
+                <h1>Pack Premium</h1>
+            </div>
+            <div class="col-10 col-lg-4 d-flex flex-column justify-content-between text-center text-lg-start mb-2 mb-lg-0 px-3">
+                <div>
+                    <h2>{{precioOro}}</h2>
+                </div>
+                <div>
+                    <p class="text-start fs-5">
+                        20 fotografías digitales editadas profesionalmente <br>
+                        Sesión fotográfica cuya duracion aprox. 3hs <br>
+                        Cambios de vestuario (lo que nos permita el RN, max 3 <br>
+                        Wrap+2vestuarios) <br>
+                        Puff y contenedores <br>
+                        Incluye fotos con papá y hermanos/as. (dentro de las 20 imágenes)
+                    </p>
+                </div>
+            </div>
+            <div class="img-container h-100 d-flex align-items-center d-none d-lg-flex col-lg-4">
+                <img [src]="listaDeFotos[3]" class="vh-50 w-auto rounded border border-3 border-primary">
+            </div>
+        </div>
+        
+        <div class="d-flex justify-content-center w-100 py-3">
+            <a class="btn btn-primary-darken" [href]="linkPlatino">Hacer Reserva</a>
+        </div>
+        
+    </div>
+    <h1 class="px-lg-5 text-center m-5">""Un bebé recién nacido trae consigo un pedacito de cielo para alegrar nuestras vidas.""</h1>
+    <p class="fs-5 text-center px-3 px-lg-5">En tus brazos tienes el mayor tesoro del mundo. Felicidades por tu hermoso bebé. <br>
+        Cada vez que lo mires, recuerda que estás mirando al amor más puro y verdadero. Una pequeña vida que llenará tus días de felicidad y tus noches de ternura
+    </p>
+    <app-carroussel [imagenes]="listaDeFotos" class="w-100 my-5"></app-carroussel>
 </div>

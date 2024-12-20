@@ -1,4 +1,126 @@
 <div class="d-flex flex-column justify-content-center align-items-center bg-white w-100 h-100">
-  <app-carroussel [imagenes]="listaDeFotos" class="w-100 h-100"></app-carroussel>
-  <button class="btn btn-primary" (click)="copiarCBU()">Copiar CBU</button>
+  <div class="container-img w-100 vh-50" [ngStyle]="{'background-image': 'url(' + listaDeFotos[0] + ')'}">
+      <div class="capa-oscura w-100 h-100 d-flex align-items-center">
+          <h1 class="titulo text-white text-center">Sesión Recien Nacido</h1>
+      </div>
+  </div>
+  <h1 class="text-center p-5">
+      <span class="fs-1 fw-bold text-black">Celebremos la vida. </span> <br>
+      <span class="fs-3 text-black">Vos y tu bella pancita son las protagonistas de esta sesión.</span>
+  </h1>
+  <p class="px-5">
+      Todas las mujeres vivimos esta etapa con ilusión y alegría. Donde hay una mezcla de magia, belleza, cierta sensualidad y femineidad a flor de piel. Por eso esta sesión está pensada para poder congelar el recuerdo y que revivas una y otra vez ese único momento donde dentro tuyo latían dos corazones. Vamos a realizar tomas bellas, únicas brindándote todo lo necesario para que te sientas plena. <br>
+      La sesión se realiza entre las semanas 26 y 30 de embarazo. Ya que tu pancita tiene el tamaño ideal para fotografiar. En esas semanas vas a estar terminando el segundo trimestre de embarazo y empezando el último trimestre. Esto quiere decir que todavía podes realizar variadas poses. <br>
+      <br>
+      <span class="fs-5 text-black">¿QUÉ INCLUYE?</span><br>
+      • Sesión fotográfica exclusiva en mi estudio ubicado en Caballito, CABA<br>
+      • Estudio climatizado continuamente.<br>
+      • Equipos de calidad profesional.<br>
+      • Vestuarios exclusivos y confeccionados especialmente para la futura mamá<br>
+      • Realizaremos tomas indicándote las poses<br>
+      Para ver bien los diferentes paquetes y valores deslizá hacia abajo y allí los vas a ver.​<br>
+      ​<br>
+      <span class="fs-5 text-black">¿CUÁNDO RESERVAR?</span><br>
+      Si querés agendar una sesión es importante que revises mi estilo de fotos para asegurarte que sea lo que buscás.<br>
+      Lo ideal es hacerlo entre la semana 26 y 30 de embarazo. Por eso se recomienda entre la semana 22 a 24 agendar fecha reservando con anticipación.<br>
+      Trabajo de lunes a viernes de 9 a 18hs.<br>
+      En caso de no poder realizar la sesión un día hábil, existe la posibilidad de realizarla un día sábado, con un recargo del 20%.<br>
+      ​<br>
+      <span class="fs-5 text-black">ENTREGA Y VALOR</span><br>
+      Te entrego las fotos editadas profesionalmente, en formato digital de máxima calidad, enviadas mediante un link de descarga. Las fotografías son seleccionadas por la fotógrafa según mi experiencia y criterio estético. (una carpeta en alta resolución, sin marca de agua y otra carpeta en la resolución apta para ser compartida en redes con marca de agua de la fotógrafa) Bajo ningún concepto se entrega material sin editar. <br>
+      *Los valores abajo mencionados son válido para sesiones a realizarse en el mes de Octubre 2024. Si tu sesión se realizara meses posteriores tener en cuenta que el valor se ajustará a ese mes según la inflación. <br>
+      Formas de pago: 50% al contratar el presupuesto por transferencia bancaria (no reembolsable) + 50% en efectivo el día que hacemos las fotos. <br>
+      ​<br>
+      <span class="fs-5 text-black">LUEGO DE LA SESIÓN</span><br>
+      La entrega del material final editado es de 10 días hábiles. Las fotos digitales se envían por link de descarga.<br>
+      Si te interesa imprimir el material consulta por los valores del laboratorio, y calcula que esto puede demorar 10 días extras.<br>
+  </p>
+
+  <div class="w-100 plata my-5">
+      <div class="d-flex flex-wrap justify-content-center w-100 py-4">
+          <div class="col-10 col-lg-4 d-flex align-items-start justify-content-center text-center mb-2 mb-lg-0">
+              <h1>Pack Plata</h1>
+          </div>
+          <div class="col-10 col-lg-4 d-flex flex-column justify-content-between text-center text-lg-start mb-2 mb-lg-0 px-3">
+              <div>
+                  <h2>{{precioPlata}}</h2>
+              </div>
+              <div>
+                  <p class="text-start fs-5">10 fotografías <br>
+                  Duración aprox 2hs <br>
+                  Vestuario outfit propio de la cliente <br>
+                  (guiado por la fotógrafa) <br>
+                  1 (uno) fondo escenográfico <br>
+                  Éste paquete NO incluye tomas familiares</p>
+              </div>
+          </div>
+          <div class="img-container h-100 d-flex align-items-center d-none d-lg-flex col-lg-4">            
+              <img [src]="listaDeFotos[1]" class="vh-50 w-auto rounded border border-3 border-primary">
+          </div>
+      </div>
+      <div class="d-flex justify-content-center w-100 py-3">
+          <a class="btn btn-primary-darken" [href]="linkPlata">Hacer Reserva</a>
+      </div>
+      
+  </div>
+
+  <div class="w-100 oro my-5">
+      <div class="d-flex flex-wrap justify-content-center w-100 py-4">
+          <div class="img-container h-100 d-flex align-items-center justify-content-end d-none d-lg-flex col-lg-4">            
+              <img [src]="listaDeFotos[2]" class="vh-50 w-auto rounded border border-3 border-primary">
+          </div>
+          <div class="col-10 col-lg-4 d-flex align-items-start justify-content-center text-center mb-2 mb-lg-0">
+              <h1>Pack Oro</h1>
+          </div>
+          <div class="col-10 col-lg-4 d-flex flex-column justify-content-between text-center text-lg-start mb-2 mb-lg-0 px-3">
+              <div>
+                  <h2>{{precioOro}}</h2>
+              </div>
+              <div>
+                  <p class="text-start fs-5">10 fotografías <br>
+                  Duración aprox 2hs <br>
+                  Vestuario outfit propio de la cliente <br>
+                  (guiado por la fotógrafa) <br>
+                  1 (uno) fondo escenográfico <br>
+                  Éste paquete NO incluye tomas familiares</p>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex justify-content-center w-100 py-3">
+          <a class="btn btn-primary-darken" [href]="linkOro">Hacer Reserva</a>
+      </div>
+      
+  </div>
+  <div class="w-100 platino my-5">
+      <div class="d-flex flex-wrap justify-content-center w-100 py-4">
+          <div class="col-10 col-lg-4 d-flex align-items-start justify-content-center text-center mb-2 mb-lg-0">
+              <h1>Pack Premium</h1>
+          </div>
+          <div class="col-10 col-lg-4 d-flex flex-column justify-content-between text-center text-lg-start mb-2 mb-lg-0 px-3">
+              <div>
+                  <h2>{{precioOro}}</h2>
+              </div>
+              <div>
+                  <p class="text-start fs-5">10 fotografías <br>
+                  Duración aprox 2hs <br>
+                  Vestuario outfit propio de la cliente <br>
+                  (guiado por la fotógrafa) <br>
+                  1 (uno) fondo escenográfico <br>
+                  Éste paquete NO incluye tomas familiares</p>
+              </div>
+          </div>
+          <div class="img-container h-100 d-flex align-items-center d-none d-lg-flex col-lg-4">            
+              <img [src]="listaDeFotos[3]" class="vh-50 w-auto rounded border border-3 border-primary">
+          </div>
+      </div>
+      
+      <div class="d-flex justify-content-center w-100 py-3">
+          <a class="btn btn-primary-darken" [href]="linkPlatino">Hacer Reserva</a>
+      </div>
+      
+  </div>
+  <h1 class="px-lg-5 text-center mx-5">Una sesión de primer año te brinda la oportunidad de capturar la pureza de su sonrisa, la ternura de sus gestos y la personalidad única que ya comienza a emerger.</h1>
+  <p class="fs-5 text-center px-3 px-lg-5">Las fotos del primer cumpleaños serán un tesoro familiar, algo que podrán mirar juntos y compartir con generaciones futuras. Es una oportunidad para crear recuerdos que durarán toda la vida. <br>
+    Estos recuerdos visuales se convierten en un legado, en un testimonio de amor que podrás compartir con tu hijo cuando crezca, y que toda la familia podrá disfrutar durante años.</p>
+  <app-carroussel [imagenes]="listaDeFotos" class="w-100 my-5"></app-carroussel>
 </div>

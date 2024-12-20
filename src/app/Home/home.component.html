@@ -23,22 +23,22 @@
   </div>
   <div class="container-fluid flex-grow-1 d-flex flex-column justify-content-center bg-background-2 m-0 p-4 ">
     <h1>Sesiones</h1>
-    <div class="row vh-50 my-3">
+    <div class="row vh-70 my-3">
       <div class="col-12 col-md-8 mx-auto d-flex flex-column justify-content-around">
-        <div (click)="aNewBorn()" class="navegar menu-new-born text-white my-2 rounded rounded-2 shadow d-flex align-items-center justify-content-center flex-grow-1">
+        <div (click)="aNewBorn()" [ngStyle]="{'background-image': 'url(' + fotosLinks[0] + ')'}" class="navegar menu-new-born text-white my-2 rounded rounded-2 shadow d-flex align-items-center justify-content-center flex-grow-1">
           <h2>New Born</h2>
         </div>
-        <div (click)="aPrimerAnio()" class="navegar menu-embarazadas text-white my-2 rounded rounded-2 shadow d-flex align-items-center justify-content-center flex-grow-1">
+        <div (click)="aPrimerAnio()" [ngStyle]="{'background-image': 'url(' + fotosLinks[1] + ')'}" class="navegar menu-primer-anio text-white my-2 rounded rounded-2 shadow d-flex align-items-center justify-content-center flex-grow-1">
           <h2>Primer Año</h2>
         </div>
-        <div (click)="aEmbarazadas()" class="navegar menu-primer-anio text-white my-2 rounded rounded-2 shadow d-flex align-items-center justify-content-center flex-grow-1">
+        <div (click)="aEmbarazadas()" [ngStyle]="{'background-image': 'url(' + fotosLinks[2] + ')'}" class="navegar menu-embarazadas text-white my-2 rounded rounded-2 shadow d-flex align-items-center justify-content-center flex-grow-1">
           <h2>Embarazadas</h2>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="d-flex flex-column justify-content-center align-items-center w-100 vh-50 my-5" id="clientesFelices">
+  <h1 class="text-start p-4 m-0">Clientes Felices</h1>
+  <div class="d-flex flex-column justify-content-center align-items-center w-100 my-5" id="clientesFelices">
     <app-carroussel-clientes [descripcion]="listaFotosClientes"  class="w-100 h-100"></app-carroussel-clientes>
   </div>
 </div>

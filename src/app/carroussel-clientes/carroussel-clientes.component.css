@@ -28,6 +28,9 @@
 
 .container-img{
     width: 80%;
+    img{
+        object-fit: contain;
+    }
 }
 
 .dot {

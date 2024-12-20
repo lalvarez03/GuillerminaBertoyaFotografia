@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AppService } from '../app.service';
 import { Router } from '@angular/router';
-import { fotosClientesFelices, fotosEmbarazadas, fotosHome, fotosPortfolio } from '../environment';
+import { fotosClientesFelices, fotosHome, fotosPortfolio } from '../environment';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +10,7 @@ import { fotosClientesFelices, fotosEmbarazadas, fotosHome, fotosPortfolio } fro
 export class HomeComponent implements OnInit {
   clase="Main";
   listaDeFotos!:string[];
+  fotosLinks:string[]=[];
   listaFotosPortfolio!:string[];
   listaFotosClientes!:[src:string,cliente:string,descripcion:string][];
   constructor(
@@ -32,6 +32,14 @@ export class HomeComponent implements OnInit {
     this.listaFotosClientes = fotosClientesFelices.map(cliente => 
       ['assets/' + this.clase + '/Clientes/' + cliente[0] + '.jpg', cliente[1], cliente[2]]
     );
+    this.fotosLinks.push(this.toLink("New_Born",fotosHome[2]));
+    this.fotosLinks.push(this.toLink("Primer_año",fotosHome[3]));
+    this.fotosLinks.push(this.toLink("Embarazadas",fotosHome[4]));
+    console.log(this.fotosLinks)
+  }
+
+  toLink(carpeta:string,archivo:string):string{
+    return 'assets/' + carpeta + '/' + archivo +'.jpg';
   }
 
   aNewBorn(){

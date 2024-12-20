@@ -1,23 +1,29 @@
-export const fotosHome:string[] = [
-    "logo",
-    "foto-principal"
-]
+/* NOTA: Todos los nombres de los archivos son exactamente igual a los que se encuentran en las carpetas,
+si se cambian los nombres de las carpetas, se deben cambiar los nombres de las variables.
+
+//FOTOS ----------------------------------------------------------------------------------------------------------
+NOTA: Todas las fotos 1 de los albumes newBorn, PrimerAnio y Embarazadas son las que se muestran en los botones de home 
+y en el top de la pagina correspondiente de cada una
+ 
+NOTA: Todas las fotos 2,3,4 de los albumes newBorn, PrimerAnio y Embarazadas son las que se muestran en los respectivos
+packs de fotos.
+*/
 
 export const fotosNewBorn:string[] = [
     "donato-dfae5ee5-1000",
+    "Olivia12-c1b98fe7-1000",
+    "Emma-13-b508b0f0-1000",
     "Emilia-14-fcce7d1f-1000",
     "Rebecca-04-7e6b18f5-1000",
     "Abril3-4934cf77-1000",
     "Emma-5-a22ab48b-1000",
-    "Emma-13-b508b0f0-1000",
-    "Olivia12-c1b98fe7-1000",
     "Rebecca-04-7e6b18f5-1000"
 ]
 
 export const fotosEmbarazadas:string[] = [
+    "Veronica-12-c14123fc-2500",
     "Anita-02-1f6b0c38-2500",
     "Veronica-09-9b50b567-2500",
-    "Veronica-12-c14123fc-2500",
     "Anita-",
     "Anita-03-beae4a28-2500",
     "Anita-10-4c19c8db-2500",
@@ -25,9 +31,10 @@ export const fotosEmbarazadas:string[] = [
 ]
 
 export const fotosPrimerAnio:string[] = [
-    "Donato-11-1a4a2edd-300",
     "Donato-16-74ea1f4b-2500",
+    "Donato-11-1a4a2edd-300",
     "Gema-13-179aaa84-2500",
+    "Ainhoa-6",
     "Gema-16-b65fec94-2500",
     "Tomas-03-c74e2b3e-2500",
     "Tomas-20-85c5a61e-2500",
@@ -67,20 +74,58 @@ export const fotosClientesFelices:[string,string,string][] = [
     ]
 ]
 
+//PAGOS Y PRECIOS------------------------------------------------------------------------------------------------
+//NEW BORN
 export const newBornLinks={
     linkMercadopagoPackPlata:"https://mpago.la/1eF3uz9",
     linkMercadopagoPackOro:"https://mpago.la/1eF3uz9",
     linkMercadopagoPackPlatino:"https://mpago.la/1eF3uz9",
 }
 
+export const newBornPrecios={
+    packPlata:"$150.000",
+    packOro:"$150.000",
+    packPlatino:"$150.000",
+}
+
+
+//EMBARAZADAS
 export const embarazadaLinks={
     linkMercadopagoPackPlata:"https://mpago.la/1eF3uz9",
     linkMercadopagoPackOro:"https://mpago.la/1eF3uz9",
     linkMercadopagoPackPlatino:"https://mpago.la/1eF3uz9",
 }
 
+export const embarazadasPrecios={
+    packPlata:"$150.000",
+    packOro:"$150.000",
+    packPlatino:"$150.000",
+}
+
+
+//PRIMER AÑO
 export const primerAnioLinks={
     linkMercadopagoPackPlata:"https://mpago.la/1eF3uz9",
     linkMercadopagoPackOro:"https://mpago.la/1eF3uz9",
     linkMercadopagoPackPlatino:"https://mpago.la/1eF3uz9",
 }
+
+export const primerAnioPrecios={
+    packPlata:"$150.000",
+    packOro:"$150.000",
+    packPlatino:"$150.000",
+}
+
+
+
+
+
+
+//NO TOCAR
+export const fotosHome:string[] = [
+    "logo",
+    "foto-principal",
+    fotosNewBorn[0],
+    fotosPrimerAnio[0],
+    fotosEmbarazadas[0]
+]

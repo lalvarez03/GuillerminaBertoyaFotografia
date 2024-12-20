@@ -1,4 +1,3 @@
-import { AppService } from "../app.service";
 import { fotosNewBorn } from "../environment";
 
 export abstract class Sesion {

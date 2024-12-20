@@ -1,26 +1,26 @@
 import { Component } from '@angular/core';
 import { RouterOutlet,Router } from '@angular/router';
-import { AppService } from './app.service';
 import { AppModule } from './app.module';
 import { fotosHome } from './environment';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
-    AppModule
+    AppModule,
+    CommonModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   providers: [
-    AppService
   ] //Los services van acá
 })
 export class AppComponent {
   title = 'regalo-mama';
   logo!:string;
-  
+  esHome=true;
   constructor(
     private router:Router,
   ){}
@@ -34,18 +34,22 @@ export class AppComponent {
   }
 
   public toHome(){
+    this.esHome=true;
     this.router.navigate(["home"])
   }
 
   public toNewBorn(){
+    this.esHome=false;
     this.router.navigate(["newBorn"])
   }
 
   public toPrimerAnio(){
+    this.esHome=false;
     this.router.navigate(["primerAnio"])
   }
   
   public toEmbarazadas(){
+    this.esHome=false;
     this.router.navigate(["embarazadas"])
   }
 }
