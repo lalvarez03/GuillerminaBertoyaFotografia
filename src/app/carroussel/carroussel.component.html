@@ -1,4 +1,6 @@
-<div *ngIf="imagenes && imagenes.length > 0" class="carroussel-container w-100 d-flex justify-content-center">
+<div *ngIf="imagenes && imagenes.length > 0" class="carroussel-container w-100 d-flex justify-content-center"
+  (swipeleft)="siguiente()" 
+  (swiperight)="anterior()">
   <div class="vh-50">
     <button class="btn izquierda p-0" (click)="anterior()"><i class="bi bi-arrow-left-circle-fill text-primary"></i></button>
   </div>
