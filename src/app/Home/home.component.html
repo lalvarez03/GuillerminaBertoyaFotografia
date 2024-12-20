@@ -1,13 +1,16 @@
 <div class="d-flex flex-column justify-content-between bg-white min-vh-100">
-  <div class="container-fluid p-5">
+  <div class="container-fluid p-2 p-md-5">
     <div class="row flex-column flex-md-row align-items-center justify-content-around">
-      <div class="col-12 col-md-2 mb-3 mb-md-0 text-center p-0">
-        <img *ngIf="listaDeFotos && listaDeFotos.length > 0" [src]="listaDeFotos[0]" class="img-fluid object-fit-cover">
+      <div class="col-12 col-md-8 d-flex">
+        <div class="col-6 col-md-4 mb-3 mb-md-0 text-center p-0">
+          <img *ngIf="listaDeFotos && listaDeFotos.length > 0" [src]="listaDeFotos[0]" class="img-fluid object-fit-cover">
+        </div>
+        <div class="col-6 col-md-8 mb-3 mb-md-0 text-center d-flex align-items-center">
+          <h1 class="m-0">Guillermina Bertoya Fotografias</h1>
+        </div>
       </div>
-      <div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
-        <h1 class="m-0">Guillermina Bertoya Fotografias</h1>
-      </div>
-      <div class="d-flex align-items-center col-12 col-md-4 text-center">
+      
+      <div class="d-flex align-items-center col-10 col-md-4 text-center px-5">
         <img *ngIf="listaDeFotos && listaDeFotos.length > 0" [src]="listaDeFotos[1]" class="img-fluid object-fit-cover rounded rounded-2">
       </div>
     </div>
