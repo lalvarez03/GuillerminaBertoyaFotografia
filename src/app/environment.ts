@@ -125,7 +125,11 @@ export const primerAnioPrecios={
 export const fotosHome:string[] = [
     "logo",
     "foto-principal",
+    "estudio",
+    "ubicacion",
     fotosNewBorn[0],
     fotosPrimerAnio[0],
     fotosEmbarazadas[0]
 ]
+export const linkMaps:string= "https://www.google.com/maps/place/Guillermina+Bertoya+Fotografia/@-34.6246872,-58.4386226,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb9579585eafb:0xd8aa974cbf713ef9!8m2!3d-34.6246872!4d-58.4360477!16s%2Fg%2F11tc1mkqrh?hl=es&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+

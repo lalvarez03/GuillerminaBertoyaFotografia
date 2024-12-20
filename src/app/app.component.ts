@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet,Router } from '@angular/router';
+import { RouterOutlet,Router, RouterModule } from '@angular/router';
 import { AppModule } from './app.module';
 import { fotosHome } from './environment';
 import { CommonModule } from '@angular/common';
@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [
     RouterOutlet,
+    RouterModule,
     AppModule,
     CommonModule
   ],
@@ -36,6 +37,10 @@ export class AppComponent {
   public toHome(){
     this.esHome=true;
     this.router.navigate(["home"])
+  }
+
+  toClientes(){
+    this.router.navigate(["home"],{fragment:'clientes-felices'})
   }
 
   public toNewBorn(){

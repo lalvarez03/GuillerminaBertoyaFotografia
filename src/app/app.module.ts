@@ -8,6 +8,7 @@ import { PrimerAñoComponent } from './PrimerAño/PrimerAño.component';
 import { HomeComponent } from './Home/home.component';
 import { CarrousselClientesComponent } from './carroussel-clientes/carroussel-clientes.component';
 import { HammerModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { fotosClientesFelices, fotosHome, fotosPortfolio } from '../environment';
+import { fotosClientesFelices, fotosHome, fotosPortfolio, linkMaps } from '../environment';
 
 @Component({
   selector: 'app-home',
@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   fotosLinks:string[]=[];
   listaFotosPortfolio!:string[];
   listaFotosClientes!:[src:string,cliente:string,descripcion:string][];
+  linkMaps!:string;
   constructor(
     private router:Router
   ) { }
@@ -32,10 +33,10 @@ export class HomeComponent implements OnInit {
     this.listaFotosClientes = fotosClientesFelices.map(cliente => 
       ['assets/' + this.clase + '/Clientes/' + cliente[0] + '.jpg', cliente[1], cliente[2]]
     );
-    this.fotosLinks.push(this.toLink("New_Born",fotosHome[2]));
-    this.fotosLinks.push(this.toLink("Primer_año",fotosHome[3]));
-    this.fotosLinks.push(this.toLink("Embarazadas",fotosHome[4]));
-    console.log(this.fotosLinks)
+    this.fotosLinks.push(this.toLink("New_Born",fotosHome[4]));
+    this.fotosLinks.push(this.toLink("Primer_año",fotosHome[5]));
+    this.fotosLinks.push(this.toLink("Embarazadas",fotosHome[6]));
+    this.linkMaps = linkMaps;
   }
 
   toLink(carpeta:string,archivo:string):string{
