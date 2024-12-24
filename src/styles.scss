@@ -29,13 +29,15 @@ app-root {
 
 $primary: #d393db;
 $secondary: #b9af91;
+$danger:#a85d5d;
 $plata:#c0b9b9;
 $oro:#fce87a;
 $platino:#b7e8f3;
 
 $theme-colors: (
   "primary":    $primary,
-  "secondary":  $secondary
+  "secondary":  $secondary,
+  "danger":  $danger
 );
 
 
@@ -46,7 +48,10 @@ $secondary-dark: darken($secondary, 30%);
 
 $bg-color-1: #ebe5e0;
 $bg-color-2: #e9cab0;
+$bg-color-3: #ebe5e0a2;
+
 $text-color-1:#d7f095;
+
 // Añade tu color personalizado al mapa de colores de Bootstrap
 $custom-colors: (
   "primary-darken": $primary-darken,
@@ -55,6 +60,7 @@ $custom-colors: (
   "secondary-dark": $secondary-dark,
   "background-1": $bg-color-1,
   "background-2": $bg-color-2,
+  "background-3": $bg-color-3,
   "text-color-1": $text-color-1,
   "plata": $plata,
   "oro": $oro,
@@ -104,6 +110,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 .vh-50{
     height: 50vh;
+}
+
+.vh-30{
+    height: 30vh;
 }
 
 .vh-10{

@@ -70,9 +70,10 @@
             </div>
         </div>
         <div class="d-flex justify-content-center w-100 py-3">
-            <a class="btn btn-primary-darken" [href]="linkPlata">Hacer Reserva</a>
+            <button class="btn btn-primary-darken" (click)="openModal(precioPlata, linkPlata,dateMin, dateMax)">
+                Hacer Reserva
+            </button>
         </div>
-        
     </div>
 
     <div class="w-100 oro my-5">
@@ -100,10 +101,12 @@
             </div>
         </div>
         <div class="d-flex justify-content-center w-100 py-3">
-            <a class="btn btn-primary-darken" [href]="linkOro">Hacer Reserva</a>
+            <button class="btn btn-primary-darken" (click)="openModal(precioOro, linkOro,dateMin, dateMax)">
+                Hacer Reserva
+            </button>
         </div>
-        
     </div>
+
     <div class="w-100 platino my-5">
         <div class="d-flex flex-wrap justify-content-center w-100 py-4">
             <div class="col-10 col-lg-4 d-flex align-items-start justify-content-center text-center mb-2 mb-lg-0">
@@ -128,9 +131,10 @@
                 <img [src]="listaDeFotos[3]" class="vh-50 w-auto rounded border border-3 border-primary">
             </div>
         </div>
-        
         <div class="d-flex justify-content-center w-100 py-3">
-            <a class="btn btn-primary-darken" [href]="linkPlatino">Hacer Reserva</a>
+            <button class="btn btn-primary-darken" (click)="openModal(precioPlatino, linkPlatino,dateMin, dateMax)">
+                Hacer Reserva
+            </button>
         </div>
         
     </div>

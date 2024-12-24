@@ -9,24 +9,28 @@ import { HomeComponent } from './Home/home.component';
 import { CarrousselClientesComponent } from './carroussel-clientes/carroussel-clientes.component';
 import { HammerModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { SobreMiComponent } from './SobreMi/SobreMi.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
-  declarations: [
+  declarations: [				
     NewBornComponent,
     EmbarazadasComponent,
     PrimerAñoComponent,
     HomeComponent,
     CarrousselComponent,
-    CarrousselClientesComponent
-  ],
+    CarrousselClientesComponent,
+    SobreMiComponent,
+    ModalComponent
+   ],
   imports: [
-    CommonModule,
-    HammerModule
+    CommonModule
   ],
   exports: [
     NewBornComponent,
     CarrousselComponent,
-    CarrousselClientesComponent
+    CarrousselClientesComponent,
+    ModalComponent
   ]
 })
 export class AppModule { }

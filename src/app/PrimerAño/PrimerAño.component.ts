@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Sesion } from '../sesion/sesion';
 import { fotosPrimerAnio, primerAnioLinks, primerAnioPrecios } from '../environment';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-PrimerAño',
@@ -17,7 +18,8 @@ export class PrimerAñoComponent extends Sesion implements OnInit {
   precioPlatino!:string;
   listaDeFotos!:string[];
   constructor(
-  ) { super()}
+      modalService: NgbModal
+    ){ super(modalService)}
 
   async ngOnInit() {
     this.setLinks();

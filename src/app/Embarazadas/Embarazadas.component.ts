@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { embarazadaLinks, embarazadasPrecios, fotosEmbarazadas } from '../environment';
 import { Sesion } from '../sesion/sesion';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-Embarazadas',
@@ -17,7 +18,8 @@ export class EmbarazadasComponent extends Sesion implements OnInit {
   precioPlatino!:string;
   listaDeFotos!:string[];
   constructor(
-  ) { super()}
+      modalService: NgbModal
+    ){ super(modalService)}
 
   async ngOnInit() {
     this.setLinks();

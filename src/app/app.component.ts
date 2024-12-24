@@ -43,6 +43,11 @@ export class AppComponent {
     this.router.navigate(["home"],{fragment:'clientes-felices'})
   }
 
+  toSobreMi(){
+    this.esHome=false;
+    this.router.navigate(["sobreMi"])
+  }
+
   public toNewBorn(){
     this.esHome=false;
     this.router.navigate(["newBorn"])

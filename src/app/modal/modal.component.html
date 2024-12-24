@@ -1,0 +1,12 @@
+<div class="modal-header bg-background-1">
+  <h4 class="modal-title">Detalles de la Reserva</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body d-flex flex-column vh-50 py-5">
+  <p>Precio: {{ price }}</p>
+  <input type="date" min="minDate" max="maxDate" class="bg-secondary border-0 rounded rounded-2 p-2 my-2">
+  <a [href]="link" class="btn btn-primary my-2">Hacer Reserva</a>
+</div>
+<div class="modal-footer bg-background-1">
+  <button type="button" class="btn btn-danger" (click)="activeModal.close('Close click')">Cerrar</button>
+</div>

@@ -59,7 +59,9 @@
             </div>
         </div>
         <div class="d-flex justify-content-center w-100 py-3">
-            <a class="btn btn-primary-darken" [href]="linkPlata">Hacer Reserva</a>
+            <button class="btn btn-primary-darken" (click)="openModal(precioPlata, linkPlata, dateMin, dateMax)">
+                Hacer Reserva
+            </button>
         </div>
         
     </div>
@@ -87,7 +89,9 @@
             </div>
         </div>
         <div class="d-flex justify-content-center w-100 py-3">
-            <a class="btn btn-primary-darken" [href]="linkOro">Hacer Reserva</a>
+            <button class="btn btn-primary-darken" (click)="openModal(precioOro, linkOro, dateMin, dateMax)">
+                Hacer Reserva
+            </button>
         </div>
         
     </div>
@@ -109,8 +113,10 @@
                     Éste paquete NO incluye tomas familiares</p>
                 </div>
             </div>
-            <div class="img-container h-100 d-flex align-items-center d-none d-lg-flex col-lg-4">            
-                <img [src]="listaDeFotos[1]" class="vh-50 w-auto rounded border border-3 border-primary">
+            <div class="d-flex justify-content-center w-100 py-3">
+                <button class="btn btn-primary-darken" (click)="openModal(precioPlatino, linkPlatino, dateMin, dateMax)">
+                    Hacer Reserva
+                </button>
             </div>
         </div>
         

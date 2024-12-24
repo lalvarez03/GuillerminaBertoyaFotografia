@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { fotosHome } from '../environment';
 
 @Component({
   selector: 'app-SobreMi',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./SobreMi.component.css']
 })
 export class SobreMiComponent implements OnInit {
+  fotoMenu!:string;
 
-  constructor() { }
-
-  ngOnInit() {
+  async ngOnInit() {
+    await this.setFotos();
   }
 
+  setFotos(){
+      this.fotoMenu = `assets/Main/${fotosHome[1]}.jpg`;
+  }
 }

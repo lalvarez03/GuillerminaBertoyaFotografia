@@ -4,13 +4,13 @@
       <div class="logo col-10 col-md-2 mb-md-0 text-center p-0" (click)="toHome()">
         <img [src]="logo" class="img-fluid object-fit-cover vh-10">
       </div>
-      <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="bi bi-camera-fill"></span>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bi bi-chevron-double-down"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto fs-5">
             <li *ngIf="esHome">
-                <a class="nav-link" href="">Información</a>
+                <a class="nav-link" (click)="toSobreMi()">Información</a>
             </li>
             <li>
                 <a class="nav-link" (click)="toClientes()">Clientes Felices</a>

@@ -1,0 +1,5 @@
+:host ::ng-deep .modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}

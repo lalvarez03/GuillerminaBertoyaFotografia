@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { SobreMiComponent } from './SobreMi/SobreMi.component';
 import { EmbarazadasComponent } from './Embarazadas/Embarazadas.component';
 import { PrimerAñoComponent } from './PrimerAño/PrimerAño.component';
 import { NewBornComponent } from './NewBorn/NewBorn.component';
 import { HomeComponent } from './Home/home.component';
 import { CarrousselComponent } from './carroussel/carroussel.component';
+import { SobreMiComponent } from './SobreMi/SobreMi.component';
 
 export const routes: Routes = [
     { path: 'sobreMi', component: SobreMiComponent },
