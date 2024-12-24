@@ -2,11 +2,15 @@
   <h4 class="modal-title">Detalles de la Reserva</h4>
   <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
 </div>
-<div class="modal-body d-flex flex-column py-5">
+<div class="modal-body d-flex flex-column py-5 text-black">
   <p class="text-decoration-underline">Precio: <span class="fw-bold">{{ price }}</span></p>
   <p>Para hacer la reserva, es necesario acordar un día y un horario con la fotógrafa. Para ello, puede usted agendar un día con el calendario u organizar directamente mediante un chat con la fotógrafa.</p>
   <p>La reserva es un 50% del valor total.</p>
-  <input type="date" min="minDate" max="maxDate" class="bg-secondary border-0 rounded rounded-2 p-2 my-2">
+  <div class="bg-secondary border-0 rounded rounded-2 p-2 my-2 text-center">
+    Calendario: 
+    <input type="date" min="minDate" max="maxDate" class="bg-secondary border-0">
+  </div>
+  
   <a class="text-black text-center w-100 bg-success rounded-2" href="http://wa.me/5491168838722">
     <p class="my-2">Contactame: <span class="bi bi-whatsapp"></span></p>
   </a>
