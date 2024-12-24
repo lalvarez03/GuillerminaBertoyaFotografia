@@ -11,3 +11,8 @@ router-outlet{
     cursor: pointer; 
     transform: scale(1.01);
 }
+
+.nav-link:hover{
+    cursor: pointer; 
+    transform: scale(1.005);
+}
