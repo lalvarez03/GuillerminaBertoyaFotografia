@@ -78,8 +78,8 @@ export const fotosClientesFelices:[string,string,string][] = [
 //NEW BORN
 export const newBornLinks={
     linkMercadopagoPackPlata:"https://mpago.la/1eF3uz9",
-    linkMercadopagoPackOro:"https://mpago.la/1eF3uz9",
-    linkMercadopagoPackPlatino:"https://mpago.la/1eF3uz9",
+    linkMercadopagoPackOro:"https://mpago.la/1DJuEhG",
+    linkMercadopagoPackPlatino:"https://mpago.la/2wg3hwa",
 }
 
 export const newBornPrecios={
@@ -92,8 +92,8 @@ export const newBornPrecios={
 //EMBARAZADAS
 export const embarazadaLinks={
     linkMercadopagoPackPlata:"https://mpago.la/1eF3uz9",
-    linkMercadopagoPackOro:"https://mpago.la/1eF3uz9",
-    linkMercadopagoPackPlatino:"https://mpago.la/1eF3uz9",
+    linkMercadopagoPackOro:"https://mpago.la/1DJuEhG",
+    linkMercadopagoPackPlatino:"https://mpago.la/2wg3hwa",
 }
 
 export const embarazadasPrecios={
@@ -106,8 +106,8 @@ export const embarazadasPrecios={
 //PRIMER AÑO
 export const primerAnioLinks={
     linkMercadopagoPackPlata:"https://mpago.la/1eF3uz9",
-    linkMercadopagoPackOro:"https://mpago.la/1eF3uz9",
-    linkMercadopagoPackPlatino:"https://mpago.la/1eF3uz9",
+    linkMercadopagoPackOro:"https://mpago.la/1DJuEhG",
+    linkMercadopagoPackPlatino:"https://mpago.la/2wg3hwa",
 }
 
 export const primerAnioPrecios={

@@ -10,4 +10,9 @@ router-outlet {
 .bi:hover {
   cursor: pointer;
   transform: scale(1.01);
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  transform: scale(1.005);
 }/*# sourceMappingURL=app.component.css.map */
