@@ -6,15 +6,22 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./carroussel-clientes.component.css']
 })
 export class CarrousselClientesComponent implements OnInit {
-  @Input() descripcion: [string,string,string][] = [];
+  @Input() descripcion: [foto:string,nombre:string,descripcion:string][] = [];
   indiceActual = 0;
 
   constructor() { }
 
   ngOnInit() {
     console.log(this.descripcion);
+    this.precargarImagenes();
   }
-
+  
+  precargarImagenes() {
+    this.descripcion.forEach(src => {
+      const img = new Image();
+      img.src = src[0];
+    });
+  }
   siguiente() {
     this.indiceActual = (this.indiceActual + 1) % this.descripcion.length;
   }

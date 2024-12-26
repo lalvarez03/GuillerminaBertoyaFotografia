@@ -47,7 +47,7 @@ export const fotosPortfolio:string[] = [
     "Rebecca-04-7e6b18f5-1000"
 ]
 
-export const fotosClientesFelices:[string,string,string][] = [
+export const fotosClientesFelices:[foto:string,nombre:string,descripcion:string][] = [
     [
         "Zoe-2-7ac026ab-1500",
         "Sabrina",
