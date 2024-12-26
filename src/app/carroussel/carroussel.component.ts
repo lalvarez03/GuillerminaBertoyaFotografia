@@ -13,17 +13,25 @@ export class CarrousselComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.imagenes);
-  }
+    this.precargarImagenes();
+}
 
-  siguiente() {
-    this.indiceActual = (this.indiceActual + 1) % this.imagenes.length;
-  }
+precargarImagenes() {
+  this.imagenes.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+}
 
-  anterior() {
-    this.indiceActual = (this.indiceActual - 1 + this.imagenes.length) % this.imagenes.length;
-  }
+siguiente() {
+  this.indiceActual = (this.indiceActual + 1) % this.imagenes.length;
+}
 
-  calcularProgreso():number{
-    return (this.indiceActual+1)/this.imagenes.length*100
-  }
+anterior() {
+  this.indiceActual = (this.indiceActual - 1 + this.imagenes.length) % this.imagenes.length;
+}
+
+calcularProgreso():number{
+  return (this.indiceActual+1)/this.imagenes.length*100
+}
 }
