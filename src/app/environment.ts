@@ -2,10 +2,10 @@
 si se cambian los nombres de las carpetas, se deben cambiar los nombres de las variables.
 
 //FOTOS ----------------------------------------------------------------------------------------------------------
-NOTA: Todas las fotos 1 de los albumes newBorn, PrimerAnio y Embarazadas son las que se muestran en los botones de home 
+NOTA: Todas las fotos n°1 de los albumes newBorn, PrimerAnio y Embarazadas son las que se muestran en los botones de home 
 y en el top de la pagina correspondiente de cada una
  
-NOTA: Todas las fotos 2,3,4 de los albumes newBorn, PrimerAnio y Embarazadas son las que se muestran en los respectivos
+NOTA: Todas las fotos n°2,3,4 de los packs albumes newBorn, PrimerAnio y Embarazadas son las que se muestran en los respectivos
 packs de fotos.
 */
 
@@ -20,16 +20,6 @@ export const fotosNewBorn:string[] = [
     "Rebecca-04-7e6b18f5-1000"
 ]
 
-export const fotosEmbarazadas:string[] = [
-    "Veronica-12-c14123fc-2500",
-    "Anita-02-1f6b0c38-2500",
-    "Veronica-09-9b50b567-2500",
-    "Anita-",
-    "Anita-03-beae4a28-2500",
-    "Anita-10-4c19c8db-2500",
-    "Keylin7byn-1c94539e-2500"
-]
-
 export const fotosPrimerAnio:string[] = [
     "Donato-16-74ea1f4b-2500",
     "Donato-11-1a4a2edd-300",
@@ -39,6 +29,16 @@ export const fotosPrimerAnio:string[] = [
     "Tomas-03-c74e2b3e-2500",
     "Tomas-20-85c5a61e-2500",
     "Zoe-03-13fc9816-1000"
+]
+
+export const fotosEmbarazadas:string[] = [
+    "Veronica-12-c14123fc-2500",
+    "Anita-02-1f6b0c38-2500",
+    "Veronica-09-9b50b567-2500",
+    "Anita-",
+    "Anita-03-beae4a28-2500",
+    "Anita-10-4c19c8db-2500",
+    "Keylin7byn-1c94539e-2500"
 ]
 
 export const fotosPortfolio:string[] = [
@@ -115,6 +115,10 @@ export const primerAnioPrecios={
     packOro:"$200.000",
     packPlatino:"$250.000",
 }
+
+
+
+
 
 
 

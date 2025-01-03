@@ -5,6 +5,12 @@ html, body {
     overflow-x: hidden;
 }
 
+app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif; /* Lista de fuentes */
   }
@@ -21,11 +27,8 @@ p {
     font-family: Arial, Helvetica, sans-serif; /* Lista de fuentes */
 }
 
-app-root {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
+
+//Colores-----------------------------------------------------------------------------------------------------------------
 
 $primary: #d393db;
 $secondary: #b9af91;
@@ -35,6 +38,11 @@ $plata:#c0b9b9;
 $oro:#fce87a;
 $platino:#b7e8f3;
 
+$bg-color-1: #ebe5e0;
+$bg-color-2: #e9cab0;
+$bg-color-3: #ebe5e0a2;
+
+//-------------------------------------------------------------------------------------------------------------------------
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
@@ -47,10 +55,6 @@ $primary-darken: darken($primary, 10%);
 $primary-dark: darken($primary, 30%);
 $secondary-darken: darken($secondary, 10%);
 $secondary-dark: darken($secondary, 30%);
-
-$bg-color-1: #ebe5e0;
-$bg-color-2: #e9cab0;
-$bg-color-3: #ebe5e0a2;
 
 $text-color-1:#d7f095;
 
