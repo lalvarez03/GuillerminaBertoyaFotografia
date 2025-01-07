@@ -1,5 +1,5 @@
 import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
-import { fotosNewBorn } from "../environment";
+import { fotosNewBorn } from "../../environment";
 import { ModalComponent } from "../modal/modal.component";
 
 export abstract class Sesion {

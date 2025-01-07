@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet,Router, RouterModule } from '@angular/router';
 import { AppModule } from './app.module';
-import { fotosHome } from './environment';
+import { fotosHome } from '../environment';
 import { CommonModule } from '@angular/common';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { fotosClientesFelices, fotosHome, fotosPortfolio, linkMaps } from '../environment';
+import { fotosClientesFelices, fotosHome, fotosPortfolio, linkMaps } from '../../environment';
 
 @Component({
   selector: 'app-home',

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { fotosHome } from '../environment';
+import { fotosHome } from '../../environment';
 
 @Component({
   selector: 'app-SobreMi',

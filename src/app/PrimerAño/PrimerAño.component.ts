@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Sesion } from '../sesion/sesion';
-import { fotosPrimerAnio, primerAnioLinks, primerAnioPrecios } from '../environment';
+import { fotosPrimerAnio, primerAnioLinks, primerAnioPrecios } from '../../environment';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({

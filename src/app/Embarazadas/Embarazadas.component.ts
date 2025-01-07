@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { embarazadaLinks, embarazadasPrecios, fotosEmbarazadas } from '../environment';
+import { embarazadaLinks, embarazadasPrecios, fotosEmbarazadas } from '../../environment';
 import { Sesion } from '../sesion/sesion';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
