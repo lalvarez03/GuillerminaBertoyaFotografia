@@ -1,7 +1,7 @@
 <div class="d-flex flex-column justify-content-center align-items-center bg-white w-100 h-100">
     <div class="container-img w-100 vh-50" [ngStyle]="{'background-image': 'url(' + listaDeFotos[0] + ')'}">
         <div class="capa-oscura w-100 h-100 d-flex align-items-center">
-            <h1 class="titulo text-white text-center">Sesión Recien Nacido</h1>
+            <h1 class="titulo text-white text-center">Sesión Dulce Espera</h1>
         </div>
     </div>
     <h1 class="text-center p-5">
@@ -23,12 +23,12 @@
         <span class="fs-5 text-black">¿CUÁNDO RESERVAR?</span><br>
         Si querés agendar una sesión es importante que revises mi estilo de fotos para asegurarte que sea lo que buscás.<br>
         Lo ideal es hacerlo entre la semana 26 y 30 de embarazo. Por eso se recomienda entre la semana 22 a 24 agendar fecha reservando con anticipación.<br>
-        Trabajo de lunes a viernes de 9 a 18hs.<br>
-        En caso de no poder realizar la sesión un día hábil, existe la posibilidad de realizarla un día sábado, con un recargo del 20%.<br>
+        Las sesiones se realizan de lunes a viernes, solo dos turnos por dia: 10hs y/o 15hs.<br>       
+        Los dias sábados unico turno: 10hs<br>
         ​<br>
         <span class="fs-5 text-black">ENTREGA Y VALOR</span><br>
         Te entrego las fotos editadas profesionalmente, en formato digital de máxima calidad, enviadas mediante un link de descarga. Las fotografías son seleccionadas por la fotógrafa según mi experiencia y criterio estético. (una carpeta en alta resolución, sin marca de agua y otra carpeta en la resolución apta para ser compartida en redes con marca de agua de la fotógrafa) Bajo ningún concepto se entrega material sin editar. <br>
-        *Los valores abajo mencionados son válido para sesiones a realizarse en el mes de Octubre 2024. Si tu sesión se realizara meses posteriores tener en cuenta que el valor se ajustará a ese mes según la inflación. <br>
+        *Los siguientes valores indicados son válidos únicamente durante el mes en curso. Para garantizar la vigencia de los precios, te recomendamos solicitar una cotización actualizada al momento de concretar tu reserva. <br>
         Formas de pago: 50% al contratar el presupuesto por transferencia bancaria (no reembolsable) + 50% en efectivo el día que hacemos las fotos. <br>
         ​<br>
         <span class="fs-5 text-black">LUEGO DE LA SESIÓN</span><br>
@@ -46,11 +46,11 @@
                     <h2>{{precioPlata}}</h2>
                 </div>
                 <div>
-                    <p class="text-start fs-5">10 fotografías <br>
-                    Duración aprox 2hs <br>
+                    <p class="text-start fs-5">10 fotografías digitales <br>
+                    Duración aprox 1hs <br>
                     Vestuario outfit propio de la cliente <br>
                     (guiado por la fotógrafa) <br>
-                    1 (uno) fondo escenográfico <br>
+                    1 (uno) fondo liso escenográfico <br>
                     Éste paquete NO incluye tomas familiares</p>
                 </div>
             </div>
@@ -69,7 +69,7 @@
     <div class="w-100 oro my-5">
         <div class="d-flex flex-wrap justify-content-center w-100 py-4">
             <div class="img-container h-100 d-flex align-items-center justify-content-end d-none d-lg-flex col-lg-4">            
-                <img [src]="listaDeFotos[1]" class="vh-50 w-auto rounded border border-3 border-primary">
+                <img [src]="listaDeFotos[2]" class="vh-50 w-auto rounded border border-3 border-primary">
             </div>
             <div class="col-10 col-lg-4 d-flex align-items-start justify-content-center text-center mb-2 mb-lg-0">
                 <h1>Pack Oro</h1>
@@ -79,11 +79,11 @@
                     <h2>{{precioOro}}</h2>
                 </div>
                 <div>
-                    <p class="text-start fs-5">10 fotografías <br>
+                    <p class="text-start fs-5">15 fotografías digitales <br>
                     Duración aprox 2hs <br>
-                    Vestuario outfit propio de la cliente <br>
+                    3 cambios de vestuario, podes traer tu outfit para mostrar tu propio estilo <br>
                     (guiado por la fotógrafa) <br>
-                    1 (uno) fondo escenográfico <br>
+                    2 (dos) fondos escenográfico <br>
                     Éste paquete NO incluye tomas familiares</p>
                 </div>
             </div>
@@ -105,16 +105,16 @@
                     <h2>{{precioPlatino}}</h2>
                 </div>
                 <div>
-                    <p class="text-start fs-5">10 fotografías <br>
-                    Duración aprox 2hs <br>
-                    Vestuario outfit propio de la cliente <br>
+                    <p class="text-start fs-5">20 fotografías digitales <br>
+                    Duración aprox 3hs <br>
+                    3 a 4 cambios de vestuario, podes traer tu outfit para mostrar tu propio estilo <br>
                     (guiado por la fotógrafa) <br>
-                    1 (uno) fondo escenográfico <br>
-                    Éste paquete NO incluye tomas familiares</p>
+                    2 (dos) fondos escenográfico <br>
+                    Incluye tomas familiares dentro de las 20 imágenes</p>
                 </div>
             </div>
             <div class="img-container h-100 d-flex align-items-center justify-content-start d-none d-lg-flex col-lg-4">            
-                <img [src]="listaDeFotos[2]" class="vh-50 w-auto rounded border border-3 border-primary">
+                <img [src]="listaDeFotos[3]" class="vh-50 w-auto rounded border border-3 border-primary">
             </div>
             <div class="d-flex justify-content-center w-100 py-3">
                 <button class="btn btn-primary-darken" (click)="openModal(precioPlatino, linkPlatino, dateMin, dateMax)">
