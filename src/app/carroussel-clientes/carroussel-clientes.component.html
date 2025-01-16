@@ -1,6 +1,6 @@
 <div *ngIf="descripcion && descripcion.length > 0" class="carroussel-container w-100 d-flex justify-content-center">
   <div class="vh-50">
-    <button class="btn izquierda p-0 h-100 border-0" (click)="anterior()"><i class="bi bi-arrow-left-circle-fill text-secondary"></i></button>
+    <button class="btn izquierda p-0 h-100 border-0" (click)="anterior()"><i class="bi bi-arrow-left-circle-fill text-secondary-dark"></i></button>
   </div>
   <div class="container-img d-flex flex-wrap align-items-center mx-2 p-4 bg-secondary-dark rounded rounded-5">
     <div class="col-12 col-lg-6 d-flex flex-column">
@@ -15,12 +15,12 @@
       </div>
     </div>
     <div class="col-12 col-lg-6 d-flex flex-column">
-      <div class="fs-2 fw-bold text-center">{{descripcion[indiceActual][1]}}</div>
+      <div class="fs-2 fw-bold text-center text-white">{{descripcion[indiceActual][1]}}</div>
       <div class="fs-5 text-center">{{descripcion[indiceActual][2]}}</div>
     </div>
   </div>
   
   <div class="vh-50">
-    <button class="btn derecha p-0 h-100 border-0" (click)="siguiente()"><i class="bi bi-arrow-right-circle-fill text-secondary"></i></button>
+    <button class="btn derecha p-0 h-100 border-0" (click)="siguiente()"><i class="bi bi-arrow-right-circle-fill text-secondary-dark"></i></button>
   </div>
 </div>

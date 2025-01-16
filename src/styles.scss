@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 html, body {
     height: 100%;
     margin: 0;         /* Evita márgenes externos */
@@ -15,32 +19,38 @@ body {
     font-family: Arial, Helvetica, sans-serif; /* Lista de fuentes */
   }
 h1 {
-    font-family: 'Times New Roman', Times, serif; /* Fuente diferente */
+    font-family: 'Roboto'; /* Fuente diferente */
 }
 h2 {
-    font-family: Arial, Helvetica, sans-serif; /* Lista de fuentes */
+    font-family: 'Bellota'; /* Lista de fuentes */
   }
 h3 {
     font-family: 'Times New Roman', Times, serif; /* Fuente diferente */
 }
+h4 {
+    font-family: 'Roboto';
+}
 p {
-    font-family: Arial, Helvetica, sans-serif; /* Lista de fuentes */
+    font-family: 'Bellota', Helvetica, sans-serif; /* Lista de fuentes */
+}
+a {
+    font-family: 'Bellota';
 }
 
 
 //Colores-----------------------------------------------------------------------------------------------------------------
 
-$primary: #d393db;
-$secondary: #b9af91;
+$primary: #966650;
+$secondary: #C89D7C ;
 $success:#7aad4a;
 $danger:#a85d5d;
 $plata:#c0b9b9;
 $oro:#fce87a;
 $platino:#b7e8f3;
 
-$bg-color-1: #ebe5e0;
-$bg-color-2: #e9cab0;
-$bg-color-3: #ebe5e0a2;
+$bg-color-1: #FFE1C6 ;
+$bg-color-2: #C89D7C ;
+$bg-color-3: #5D4034 ;
 
 //-------------------------------------------------------------------------------------------------------------------------
 
@@ -55,7 +65,7 @@ $theme-colors: (
 $primary-darken: darken($primary, 10%);
 $primary-dark: darken($primary, 30%);
 $secondary-darken: darken($secondary, 10%);
-$secondary-dark: darken($secondary, 30%);
+$secondary-dark: darken($secondary, 15%);
 
 $text-color-1:#d7f095;
 

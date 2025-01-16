@@ -6,7 +6,7 @@
           <img *ngIf="listaDeFotos && listaDeFotos.length > 0" [src]="listaDeFotos[0]" class="img-fluid object-fit-cover">
         </div>
         <div class="col-6 col-md-8 mb-3 mb-md-0 text-center d-flex align-items-center">
-          <h1 class="m-0 w-100">Guillermina Bertoya Fotografias</h1>
+          <h4 class="fs-1 m-0 w-100">Guillermina Bertoya Fotografía</h4>
         </div>
       </div>
       
@@ -25,7 +25,7 @@
     <app-carroussel [imagenes]="listaFotosPortfolio" class="w-100 h-100"></app-carroussel>
   </div>
   <div class="container-fluid flex-grow-1 d-flex flex-column justify-content-center bg-background-2 m-0 p-4">
-    <h1>Sesiones</h1>
+    <h1 class="fw-bold">Sesiones</h1>
     <div class="row vh-70 my-3">
       <div class="col-12 col-md-8 mx-auto d-flex flex-column justify-content-around">
         <div (click)="aNewBorn()" [ngStyle]="{'background-image': 'url(' + fotosLinks[0] + ')'}" class="navegar menu-new-born text-white my-2 rounded rounded-2 shadow d-flex align-items-center justify-content-center flex-grow-1">
@@ -40,7 +40,7 @@
       </div>
     </div>
   </div>
-    <h1 class="text-start  m-0 p-4" id="clientes-felices">Clientes Felices</h1>
+    <h1 class="fw-bold m-0 p-4" id="clientes-felices">Clientes Felices</h1>
     <div class="d-flex flex-column justify-content-center align-items-center w-100 my-5" id="clientesFelices">
       <app-carroussel-clientes [descripcion]="listaFotosClientes"  class="w-100 h-100"></app-carroussel-clientes>
     </div>
@@ -50,10 +50,10 @@
     <div class="container-fluid d-flex flex-md-row flex-column justify-content-center py-3">
       <div class="col-12 col-md-8 align-self-top">
         <h1 class="fw-bold">Estudio Fotográfico</h1>
-        <h4 class="fs-5">La importancia de tener tu propio espacio
+        <p class="fs-5">La importancia de tener tu propio espacio
 <br>        Empecé trabajando en el living de mi casa durante 3 años. Todo un desafío!!! Hasta que los props y equipos llenaron todos los rincones de mi casa.
 <br>        Éste año pude dar ese gran paso y tener mi propio espacio, mi estudio soñado en el barrio de Caballito. Pensado con mucho cariño. Donde tengo todo lo necesario para recibirte y que tengas una experiencia única e innolvidable. Climatizado especialmente para cada sesión.
-        </h4>
+        </p>
       </div>
       <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
         <div class="col-8 col-md-12 p-3">
