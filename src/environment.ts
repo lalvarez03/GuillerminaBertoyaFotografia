@@ -10,21 +10,21 @@ packs de fotos.
 */
 
 export const fotosNewBorn:string[] = [
-    "donato-dfae5ee5-1000",
-    "Olivia12-c1b98fe7-1000",
-    "Emma-13-b508b0f0-1000",
-    "Emilia-14-fcce7d1f-1000",
-    "Rebecca-04-7e6b18f5-1000",
-    "Abril3-4934cf77-1000",
+    "Donato-15",
+    "Sebastian-14",
+    "Emma-13",
+    "Rebecca 14",
+    "Rebecca 4",
+    "Abril 3",
     "Emma-5-a22ab48b-1000",
     "Rebecca-04-7e6b18f5-1000"
 ]
 
 export const fotosPrimerAnio:string[] = [
-    "Donato-16-74ea1f4b-2500",
-    "Donato-11-1a4a2edd-300",
-    "Gema-13-179aaa84-2500",
-    "Ainhoa-6",
+    "Donato-16",
+    "Donato-11",
+    "Gema-13",
+    "Tomas-11",
     "Gema-16-b65fec94-2500",
     "Tomas-03-c74e2b3e-2500",
     "Tomas-20-85c5a61e-2500",
@@ -32,19 +32,30 @@ export const fotosPrimerAnio:string[] = [
 ]
 
 export const fotosEmbarazadas:string[] = [
-    "Veronica-12-c14123fc-2500",
-    "Anita-02-1f6b0c38-2500",
-    "Veronica-09-9b50b567-2500",
-    "Anita-",
-    "Anita-03-beae4a28-2500",
-    "Anita-10-4c19c8db-2500",
-    "Keylin7byn-1c94539e-2500"
+    "Veronica-12",
+    "Anita-2",
+    "Veronica-09",
+    "Anita-7",
+    "Anita-3",
+    "Anita-10",
+    "Keylin-7byn",
+    "Anita-9",
+    "Anita-5",
+    "Veronica-11",
 ]
 
 export const fotosPortfolio:string[] = [
-    "donato-dfae5ee5-1000",
-    "Emilia-14-fcce7d1f-1000",
-    "Rebecca-04-7e6b18f5-1000"
+    "Valentina 12",
+    "Valentina 9",
+    "Valentina 4",
+    "Sebastian-12",
+    "Sebastian-10",
+    "Sebastian-08",
+    "Rio 17",
+    "Rio 16",
+    "Rio 2",
+    "Olivia 1",
+    "Olivia 3",
 ]
 
 export const fotosClientesFelices:[foto:string,nombre:string,descripcion:string][] = [
@@ -83,9 +94,9 @@ export const newBornLinks={
 }
 
 export const newBornPrecios={
-    packPlata:"$150.000",
-    packOro:"$200.000",
-    packPlatino:"$250.000",
+    packPlata:"$120.000",
+    packOro:"$150.000",
+    packPlatino:"$160.000",
 }
 
 
@@ -97,9 +108,9 @@ export const embarazadaLinks={
 }
 
 export const embarazadasPrecios={
-    packPlata:"$150.000",
-    packOro:"$200.000",
-    packPlatino:"$250.000",
+    packPlata:"$110.000",
+    packOro:"$140.000",
+    packPlatino:"$160.000",
 }
 
 
@@ -111,9 +122,9 @@ export const primerAnioLinks={
 }
 
 export const primerAnioPrecios={
-    packPlata:"$150.000",
-    packOro:"$200.000",
-    packPlatino:"$250.000",
+    packPlata:"$110.000",
+    packOro:"$130.000",
+    packPlatino:"$150.000",
 }
 
 
