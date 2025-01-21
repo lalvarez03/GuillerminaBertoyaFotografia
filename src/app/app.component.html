@@ -10,16 +10,22 @@
       <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto fs-5">
             <li *ngIf="esHome">
-                <a class="nav-link" (click)="toSobreMi()">Información</a>
+                <a class="nav-link" (click)="toSobreMi()">Sobre Mí</a>
             </li>
             <li>
-                <a class="nav-link"  href="#clientes-felices">Clientes Felices</a>
+                <a class="nav-link"  href="#clientes-felices">Clientes Felices</a>  
             </li>
             <li *ngIf="esHome">
                 <a class="nav-link" href="#ubicacion">Ubicación</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
+            <li class="dropdown">
+                <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
+                <ul class="dropdown-menu bg-secondary-darken">   
+                    <li><a class="mx-2 text-white fs-bold text-decoration-none" href="http://wa.me/5491168838722">Whatsapp<span class="bi bi-whatsapp mx-3"></span></a></li>
+                    <li><a class="mx-2 text-white fs-bold text-decoration-none" href="https://www.facebook.com/guillerminabertoya.fotografia">Facebook<span class="bi bi-facebook mx-3"></span></a></li>
+                    <li><a class="mx-2 text-white fs-bold text-decoration-none" href="https://www.tiktok.com/@guillerminabertoya.ph">Tiktok<span class="bi bi-tiktok mx-3"></span></a></li>
+                    <li><a class="mx-2 text-white fs-bold text-decoration-none" href="https://www.instagram.com/guillerminabertoya.fotografia/">Instagram<span class="bi bi-instagram mx-3"></span></a>  </li>
+                </ul>
             </li>
             <li class="dropdown">
                 <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Sesiones</a>
@@ -28,10 +34,6 @@
                     <li><a class="dropdown-item text-white hover-secondary-dark" (click)="toPrimerAnio()">Primer Año</a></li>
                     <li><a class="dropdown-item text-white hover-secondary-dark" (click)="toEmbarazadas()">Dulce Espera</a></li>
                 </ul>
-                
-            </li>
-            <li *ngIf="esHome">
-                <a class="nav-link" href="">Portfolio</a>
             </li>
           </ul>
       </div>
@@ -51,7 +53,7 @@
             <a class="bi bi-whatsapp mx-3 text-black" href="http://wa.me/5491168838722"></a>
             <a class="bi bi-facebook mx-3 text-black" href="https://www.facebook.com/guillerminabertoya.fotografia"></a>
             <a class="bi bi-tiktok mx-3 text-black" href="https://www.tiktok.com/@guillerminabertoya.ph"></a>
-            <a class="bi bi-instagram mx-3 text-black" href="https://www.instagram.com"></a>    
+            <a class="bi bi-instagram mx-3 text-black" href="https://www.instagram.com/guillerminabertoya.fotografia/"></a>    
         </div>
     </div>
 </footer>

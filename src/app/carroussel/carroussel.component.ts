@@ -11,9 +11,9 @@ export class CarrousselComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  async ngOnInit() {
     console.log(this.imagenes);
-    this.precargarImagenes();
+    await this.precargarImagenes();
 }
 
 precargarImagenes() {

@@ -13,5 +13,6 @@ export const routes: Routes = [
     { path: 'primerAnio', component: PrimerAñoComponent },
     { path: 'home', component: HomeComponent },
     { path: 'carru', component: CarrousselComponent },
+    { path: 'portfolio', component: HomeComponent},
     { path: '', component: HomeComponent }
 ];
