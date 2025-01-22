@@ -87,6 +87,7 @@ export const fotosClientesFelices:[foto:string,nombre:string,descripcion:string]
 
 //PAGOS Y PRECIOS------------------------------------------------------------------------------------------------
 //NEW BORN
+export const cbu = "lalvarezbertoya.ppay"
 export const newBornLinks={
     linkMercadopagoPackPlata:"https://mpago.la/1eF3uz9",
     linkMercadopagoPackOro:"https://mpago.la/1DJuEhG",
