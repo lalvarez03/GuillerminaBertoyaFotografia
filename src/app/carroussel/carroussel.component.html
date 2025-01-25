@@ -1,25 +1,45 @@
-<div *ngIf="imagenes && imagenes.length > 0" class="carroussel-container w-100 d-flex justify-content-center"
-  (panleft)="siguiente()" 
-  (panright)="anterior()">
-  <div class="vh-50">
-    <button class="btn izquierda p-0 h-100 border-0" (click)="anterior()"><i class="bi bi-arrow-left-circle-fill text-primary"></i></button>
-  </div>
-  <div class="container-img vh-50">
-    <div class="h-95 d-flex justify-content-center">
-      <img [src]="imagenes[indiceActual]" class="h-100 border border-primary border-3 rounded rounder-5">
+<div *ngIf="imagenes && imagenes.length > 0" class="carousel-container w-100 d-flex flex-column justify-content-center align-items-center"
+     (swipeleft)="siguiente()" 
+     (swiperight)="anterior()">
+  <div class="carousel-wrapper position-relative vh-50 w-100">
+    <button class="btn izquierda px-2 h-100 border-0 position-absolute start-0 top-50 translate-middle-y" 
+            (click)="anterior()"
+            aria-label="Imagen anterior">
+      <i class="bi bi-arrow-left-circle-fill fs-3 text-primary-darken"></i>
+    </button>
+    
+    <div class="container-img h-100 d-flex justify-content-center align-items-center overflow-hidden">
+      <ng-container *ngFor="let imagen of imagenes; let i = index">
+        <img [src]="imagen" 
+             [class.active]="i === indiceActual"
+             class="carousel-image h-100 border border-primary border-3 rounded rounder-5 position-absolute"
+             [attr.alt]="'Imagen ' + (i + 1) + ' de ' + imagenes.length"
+             [attr.aria-hidden]="i !== indiceActual">
+      </ng-container>
     </div>
-    <div class="h-5 d-flex justify-content-center align-items-center">
-      <div class="d-flex justify-content-evenly w-70">
-        <div *ngFor="let im of imagenes; let i = index">
-          <div class="dot bg-background-1 mx-1" *ngIf="i !== indiceActual"></div>
-          <div class="dot active bg-primary mx-1" *ngIf="i === indiceActual"></div>
-        </div>
-      </div>
-      
-    </div>
+    
+    <button class="btn derecha px-2 h-100 border-0 position-absolute end-0 top-50 translate-middle-y" 
+            (click)="siguiente()"
+            aria-label="Siguiente imagen">
+      <i class="bi bi-arrow-right-circle-fill fs-3 text-primary-darken"></i>
+    </button>
   </div>
   
-  <div class="vh-50">
-    <button class="btn derecha p-0 h-100 border-0" (click)="siguiente()"><i class="bi bi-arrow-right-circle-fill text-primary"></i></button>
+  <div class="carousel-controls mt-3 d-flex justify-content-center align-items-center">
+    <button class="btn btn-sm btn-primary me-2" (click)="toggleAutoplay()">
+      {{ autoplayActive ? 'Pausar' : 'Reproducir' }}
+    </button>
+    <div class="d-flex">
+      <div *ngFor="let im of imagenes; let i = index" class="mx-1">
+        <div class="dot" 
+             [class.active]="i === indiceActual"
+             [class.bg-primary]="i === indiceActual"
+             [class.bg-secondary]="i !== indiceActual"
+             (click)="irA(i)"
+             [attr.aria-label]="'Ir a imagen ' + (i + 1)"
+             role="button"
+             tabindex="0"></div>
+      </div>
+    </div>
   </div>
 </div>

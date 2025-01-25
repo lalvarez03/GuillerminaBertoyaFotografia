@@ -29,7 +29,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     ModalComponent
    ],
   imports: [
-    CommonModule
+    CommonModule, HammerModule
   ],
   exports: [
     NewBornComponent,
