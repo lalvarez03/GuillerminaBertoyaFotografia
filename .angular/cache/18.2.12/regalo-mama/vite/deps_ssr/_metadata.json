@@ -1,49 +1,49 @@
 {
-  "hash": "faa27063",
-  "configHash": "31b31bf3",
-  "lockfileHash": "ba79e8b9",
-  "browserHash": "57b7753e",
+  "hash": "b18c4e6c",
+  "configHash": "efb815d1",
+  "lockfileHash": "889af109",
+  "browserHash": "ec0666d8",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "35804e18",
+      "fileHash": "e4283f24",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "82619925",
+      "fileHash": "a9ed3aee",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "5669cf85",
+      "fileHash": "b521cbfe",
       "needsInterop": false
     },
     "@angular/platform-server": {
       "src": "../../../../../../node_modules/@angular/platform-server/fesm2022/platform-server.mjs",
       "file": "@angular_platform-server.js",
-      "fileHash": "542d3bff",
+      "fileHash": "47bc56b9",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "e3e5d1cc",
+      "fileHash": "279153bb",
       "needsInterop": false
     },
     "@ng-bootstrap/ng-bootstrap": {
       "src": "../../../../../../node_modules/@ng-bootstrap/ng-bootstrap/fesm2022/ng-bootstrap.mjs",
       "file": "@ng-bootstrap_ng-bootstrap.js",
-      "fileHash": "f3d74da6",
+      "fileHash": "e59f44a3",
       "needsInterop": false
     },
     "rxjs": {
       "src": "../../../../../../node_modules/rxjs/dist/cjs/index.js",
       "file": "rxjs.js",
-      "fileHash": "adf962e6",
+      "fileHash": "198fb0c7",
       "needsInterop": true
     }
   },
