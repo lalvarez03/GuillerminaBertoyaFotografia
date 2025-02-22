@@ -124,9 +124,9 @@ export const primerAnioLinks={
 }
 
 export const primerAnioPrecios={
-    packPlata:"$110.000",
-    packOro:"$130.000",
-    packPlatino:"$150.000",
+    packPlata:"$140.000",
+    packOro:"$190.000",
+    packPlatino:"$210.000",
 }
 
 
