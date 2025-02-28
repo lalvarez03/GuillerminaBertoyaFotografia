@@ -96,9 +96,9 @@ export const newBornLinks={
 }
 
 export const newBornPrecios={
-    packPlata:"$130.000",
-    packOro:"$170.000",
-    packPlatino:"$180.000",
+    packPlata:"$160.000",
+    packOro:"$190.000",
+    packPlatino:"$200.000",
 }
 
 
@@ -128,8 +128,6 @@ export const primerAnioPrecios={
     packOro:"$190.000",
     packPlatino:"$210.000",
 }
-
-
 
 
 
