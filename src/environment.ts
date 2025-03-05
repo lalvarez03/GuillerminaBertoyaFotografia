@@ -86,7 +86,7 @@ export const fotosClientesFelices:[foto:string,nombre:string,descripcion:string]
 ]
 
 //PAGOS Y PRECIOS------------------------------------------------------------------------------------------------
-export const cbu = "lalvarezbertoya.ppay"
+export const cbu = "guibertoya.foto"
 
 //NEW BORN
 export const newBornLinks={
