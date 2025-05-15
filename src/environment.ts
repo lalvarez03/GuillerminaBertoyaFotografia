@@ -11,13 +11,13 @@ packs de fotos.
 
 export const fotosNewBorn:string[] = [
     "fotografia-recien-nacido-caballito-1",
-    "fotografia-recien-nacido-caballito 2",
-    "fotografia-recien-nacido-caballito 3",
-    "fotografia-recien-nacido-caballito 4",
-    "fotografia-recien-nacido-caballito 5",
-    "fotografia-recien-nacido-caballito 6",
-    "fotografia-recien-nacido-caballito 7",
-    "fotografia-recien-nacido-caballito 8",
+    "fotografia-recien-nacido-caballito-2",
+    "fotografia-recien-nacido-caballito-3",
+    "fotografia-recien-nacido-caballito-4",
+    "fotografia-recien-nacido-caballito-5",
+    "fotografia-recien-nacido-caballito-6",
+    "fotografia-recien-nacido-caballito-7",
+    "fotografia-recien-nacido-caballito-8",
 ]
 
 export const fotosPrimerAnio:string[] = [
@@ -45,17 +45,17 @@ export const fotosEmbarazadas:string[] = [
 ]
 
 export const fotosPortfolio:string[] = [
-    "fotografia-recien-nacido-buenos-aires 1",
-    "fotografia-recien-nacido-buenos-aires 2",
-    "fotografia-recien-nacido-buenos-aires 3",
-    "fotografia-recien-nacido-buenos-aires 4",
-    "fotografia-recien-nacido-buenos-aires 5",
-    "fotografia-recien-nacido-buenos-aires 6",
-    "fotografia-recien-nacido-buenos-aires 7",
-    "fotografia-recien-nacido-buenos-aires 8",
-    "fotografia-recien-nacido-buenos-aires 9",
-    "fotografia-recien-nacido-buenos-aires 10",
-    "fotografia-recien-nacido-buenos-aires 11",
+    "fotografia-recien-nacido-buenos-aires1",
+    "fotografia-recien-nacido-buenos-aires2",
+    "fotografia-recien-nacido-buenos-aires3",
+    "fotografia-recien-nacido-buenos-aires4",
+    "fotografia-recien-nacido-buenos-aires5",
+    "fotografia-recien-nacido-buenos-aires6",
+    "fotografia-recien-nacido-buenos-aires7",
+    "fotografia-recien-nacido-buenos-aires8",
+    "fotografia-recien-nacido-buenos-aires9",
+    "fotografia-recien-nacido-buenos-aires10",
+    "fotografia-recien-nacido-buenos-aires11",
 ]
 
 export const fotosClientesFelices:[foto:string,nombre:string,descripcion:string][] = [
