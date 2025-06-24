@@ -33,15 +33,15 @@ export const fotosPrimerAnio:string[] = [
 
 export const fotosEmbarazadas:string[] = [
     "sesion-embarazo-caballito-1",
-    "sesion-embarazo-caballito 2",
-    "sesion-embarazo-caballito 3",
-    "sesion-embarazo-caballito 4",
-    "sesion-embarazo-caballito 5",
-    "sesion-embarazo-caballito 6",
-    "sesion-embarazo-caballito 7",
-    "sesion-embarazo-caballito 8",
-    "sesion-embarazo-caballito 9",
-    "sesion-embarazo-caballito 10",
+    "sesion-embarazo-caballito-2",
+    "sesion-embarazo-caballito-3",
+    "sesion-embarazo-caballito-4",
+    "sesion-embarazo-caballito-5",
+    "sesion-embarazo-caballito-6",
+    "sesion-embarazo-caballito-7",
+    "sesion-embarazo-caballito-8",
+    "sesion-embarazo-caballito-9",
+    "sesion-embarazo-caballito-10",
 ]
 
 export const fotosPortfolio:string[] = [
