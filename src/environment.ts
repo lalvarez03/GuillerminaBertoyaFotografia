@@ -97,7 +97,7 @@ export const newBornLinks={
 
 export const newBornPrecios={
     packPlata:"$160.000",
-    packOro:"$190.000",
+    packOro:"$180.000",
     packPlatino:"$200.000",
 }
 
@@ -110,9 +110,9 @@ export const embarazadaLinks={
 }
 
 export const embarazadasPrecios={
-    packPlata:"$110.000",
-    packOro:"$140.000",
-    packPlatino:"$160.000",
+    packPlata:"$140.000",
+    packOro:"$160.000",
+    packPlatino:"$180.000",
 }
 
 
