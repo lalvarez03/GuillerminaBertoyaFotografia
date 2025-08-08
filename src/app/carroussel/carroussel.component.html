@@ -12,6 +12,7 @@
       <ng-container *ngFor="let imagen of imagenes; let i = index">
         <img [src]="imagen" 
              [class.active]="i === indiceActual"
+             loading="lazy"
              class="carousel-image h-100 border border-primary border-3 rounded rounder-5 position-absolute"
              [attr.alt]="'Imagen ' + (i + 1) + ' de ' + imagenes.length"
              [attr.aria-hidden]="i !== indiceActual">

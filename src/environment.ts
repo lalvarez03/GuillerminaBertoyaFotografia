@@ -21,14 +21,14 @@ export const fotosNewBorn:string[] = [
 ]
 
 export const fotosPrimerAnio:string[] = [
-    "sesion-primeraño-caballito-1",
-    "sesion-primeraño-caballito-2",
-    "sesion-primeraño-caballito-3",
-    "sesion-primeraño-caballito-4",
-    "sesion-primeraño-caballito-5",
-    "sesion-primeraño-caballito-6",
-    "sesion-primeraño-caballito-7",
-    "sesion-primeraño-caballito-8",
+    "sesion-primeranio-caballito-1",
+    "sesion-primeranio-caballito-2",
+    "sesion-primeranio-caballito-3",
+    "sesion-primeranio-caballito-4",
+    "sesion-primeranio-caballito-5",
+    "sesion-primeranio-caballito-6",
+    "sesion-primeranio-caballito-7",
+    "sesion-primeranio-caballito-8",
 ]
 
 export const fotosEmbarazadas:string[] = [

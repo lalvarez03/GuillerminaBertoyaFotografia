@@ -1,5 +1,5 @@
 <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg navbar-light bg-background-1 w-100 position-sticky top-0 start-0">
+<nav class="navbar navbar-expand-lg navbar-light bg-background-1 w-100 position-fixed top-0 start-0 z-3">
   <div class="container menu">
       <div class="logo col-10 col-md-2 mb-md-0 text-center p-0" (click)="toHome()">
         <img [src]="logo" class="img-fluid object-fit-cover vh-10">
@@ -42,7 +42,7 @@
 
 
 <div class="flex-grow-1">
-    <router-outlet class="d-flex align-items-center justify-content-center"></router-outlet>
+    <router-outlet class="d-flex align-items-center justify-content-center mt-5"></router-outlet>
 </div>
 
 <!-- Footer -->
