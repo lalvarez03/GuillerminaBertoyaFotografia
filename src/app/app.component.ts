@@ -32,7 +32,7 @@ export class AppComponent {
     this.router.events
       .pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd))
       .subscribe(() => {
-        const contenedor = document.querySelector('#contenedor-principal');
+        const contenedor = document.querySelector(' #contenedoPrincipal');
         if (contenedor) {
           contenedor.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
