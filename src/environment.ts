@@ -10,52 +10,52 @@ packs de fotos.
 */
 
 export const fotosNewBorn:string[] = [
-    "Donato-15",
-    "Sebastian-14",
-    "Emma-13",
-    "Rebecca 14",
-    "Rebecca 4",
-    "Abril 3",
-    "Emma-5-a22ab48b-1000",
-    "Rebecca-04-7e6b18f5-1000"
+    "fotografia-recien-nacido-caballito-1",
+    "fotografia-recien-nacido-caballito-2",
+    "fotografia-recien-nacido-caballito-3",
+    "fotografia-recien-nacido-caballito-4",
+    "fotografia-recien-nacido-caballito-5",
+    "fotografia-recien-nacido-caballito-6",
+    "fotografia-recien-nacido-caballito-7",
+    "fotografia-recien-nacido-caballito-8",
 ]
 
 export const fotosPrimerAnio:string[] = [
-    "Donato-16",
-    "Donato-11",
-    "Gema-13",
-    "Tomas-11",
-    "Gema-16-b65fec94-2500",
-    "Tomas-03-c74e2b3e-2500",
-    "Tomas-20-85c5a61e-2500",
-    "Zoe-03-13fc9816-1000"
+    "sesion-primeraño-caballito-1",
+    "sesion-primeraño-caballito-2",
+    "sesion-primeraño-caballito-3",
+    "sesion-primeraño-caballito-4",
+    "sesion-primeraño-caballito-5",
+    "sesion-primeraño-caballito-6",
+    "sesion-primeraño-caballito-7",
+    "sesion-primeraño-caballito-8",
 ]
 
 export const fotosEmbarazadas:string[] = [
-    "Veronica-12",
-    "Anita-2",
-    "Veronica-09",
-    "Anita-7",
-    "Anita-3",
-    "Anita-10",
-    "Keylin-7byn",
-    "Anita-9",
-    "Anita-5",
-    "Veronica-11",
+    "sesion-embarazo-caballito-1",
+    "sesion-embarazo-caballito-2",
+    "sesion-embarazo-caballito-3",
+    "sesion-embarazo-caballito-4",
+    "sesion-embarazo-caballito-5",
+    "sesion-embarazo-caballito-6",
+    "sesion-embarazo-caballito-7",
+    "sesion-embarazo-caballito-8",
+    "sesion-embarazo-caballito-9",
+    "sesion-embarazo-caballito-10",
 ]
 
 export const fotosPortfolio:string[] = [
-    "Valentina 12",
-    "Valentina 9",
-    "Valentina 4",
-    "Sebastian-12",
-    "Sebastian-10",
-    "Sebastian-08",
-    "Rio 17",
-    "Rio 16",
-    "Rio 2",
-    "Olivia 1",
-    "Olivia 3",
+    "fotografia-recien-nacido-buenos-aires-1",
+    "fotografia-recien-nacido-buenos-aires-2",
+    "fotografia-recien-nacido-buenos-aires-3",
+    "fotografia-recien-nacido-buenos-aires-4",
+    "fotografia-recien-nacido-buenos-aires-5",
+    "fotografia-recien-nacido-buenos-aires-6",
+    "fotografia-recien-nacido-buenos-aires-7",
+    "fotografia-recien-nacido-buenos-aires-8",
+    "fotografia-recien-nacido-buenos-aires-9",
+    "fotografia-recien-nacido-buenos-aires-10",
+    "fotografia-recien-nacido-buenos-aires-11",
 ]
 
 export const fotosClientesFelices:[foto:string,nombre:string,descripcion:string][] = [
@@ -86,8 +86,9 @@ export const fotosClientesFelices:[foto:string,nombre:string,descripcion:string]
 ]
 
 //PAGOS Y PRECIOS------------------------------------------------------------------------------------------------
+export const cbu = "guibertoya.foto"
+
 //NEW BORN
-export const cbu = "lalvarezbertoya.ppay"
 export const newBornLinks={
     linkMercadopagoPackPlata:"https://mpago.la/1eF3uz9",
     linkMercadopagoPackOro:"https://mpago.la/1DJuEhG",
@@ -95,9 +96,9 @@ export const newBornLinks={
 }
 
 export const newBornPrecios={
-    packPlata:"$120.000",
-    packOro:"$150.000",
-    packPlatino:"$160.000",
+    packPlata:"$160.000",
+    packOro:"$180.000",
+    packPlatino:"$200.000",
 }
 
 
@@ -109,9 +110,9 @@ export const embarazadaLinks={
 }
 
 export const embarazadasPrecios={
-    packPlata:"$110.000",
-    packOro:"$140.000",
-    packPlatino:"$160.000",
+    packPlata:"$140.000",
+    packOro:"$160.000",
+    packPlatino:"$180.000",
 }
 
 
@@ -123,9 +124,9 @@ export const primerAnioLinks={
 }
 
 export const primerAnioPrecios={
-    packPlata:"$110.000",
-    packOro:"$130.000",
-    packPlatino:"$150.000",
+    packPlata:"$140.000",
+    packOro:"$190.000",
+    packPlatino:"$210.000",
 }
 
 
@@ -135,9 +136,7 @@ export const primerAnioPrecios={
 
 
 
-
-
-//NO TOCAR
+//NO TOCAR ----------------------------------------------------------------------------
 export const fotosHome:string[] = [
     "logo",
     "foto-principal",
