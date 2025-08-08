@@ -20,7 +20,6 @@ export class HomeComponent implements OnInit {
 
   async ngOnInit() {
       await this.setFotos()
-      console.log(this.listaDeFotos)
     }
   
   setFotos(){
