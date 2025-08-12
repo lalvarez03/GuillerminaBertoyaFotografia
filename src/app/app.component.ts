@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet,Router, RouterModule } from '@angular/router';
+import { RouterOutlet,Router, RouterModule, NavigationEnd } from '@angular/router';
 import { AppModule } from './app.module';
 import { fotosHome } from '../environment';
 import { CommonModule } from '@angular/common';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -28,6 +29,16 @@ export class AppComponent {
 
   async ngOnInit() {
     await this.setFotos()
+    this.router.events
+      .pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd))
+      .subscribe(() => {
+        const contenedor = document.querySelector(' #contenedoPrincipal');
+        if (contenedor) {
+          contenedor.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
   }
     
   setFotos(){

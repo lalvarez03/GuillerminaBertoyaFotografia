@@ -9,7 +9,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./PrimerAño.component.css']
 })
 export class PrimerAñoComponent extends Sesion implements OnInit {
-  clase="Primer_año";
+  clase="Primer_anio";
   linkPlata!:string;
   linkOro!:string;
   linkPlatino!:string;

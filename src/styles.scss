@@ -121,6 +121,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     height: 100vh;
 }
 
+.vh-90{
+    height: 90vh;
+}
+
 .vh-70{
    height: 70vh;
 }

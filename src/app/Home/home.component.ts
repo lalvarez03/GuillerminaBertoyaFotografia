@@ -20,7 +20,6 @@ export class HomeComponent implements OnInit {
 
   async ngOnInit() {
       await this.setFotos()
-      console.log(this.listaDeFotos)
     }
   
   setFotos(){
@@ -34,7 +33,7 @@ export class HomeComponent implements OnInit {
       ['assets/' + this.clase + '/Clientes/' + cliente[0] + '.jpg', cliente[1], cliente[2]]
     );
     this.fotosLinks.push(this.toLink("New_Born",fotosHome[4]));
-    this.fotosLinks.push(this.toLink("Primer_año",fotosHome[5]));
+    this.fotosLinks.push(this.toLink("Primer_anio",fotosHome[5]));
     this.fotosLinks.push(this.toLink("Embarazadas",fotosHome[6]));
     this.linkMaps = linkMaps;
   }
