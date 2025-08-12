@@ -96,9 +96,9 @@ export const newBornLinks={
 }
 
 export const newBornPrecios={
-    packPlata:"$160.000",
-    packOro:"$180.000",
-    packPlatino:"$200.000",
+    packPlata:"$235.000",
+    packOro:"$250.000",
+    packPlatino:"$270.000",
 }
 
 
@@ -110,9 +110,9 @@ export const embarazadaLinks={
 }
 
 export const embarazadasPrecios={
-    packPlata:"$140.000",
-    packOro:"$160.000",
-    packPlatino:"$180.000",
+    packPlata:"$185.000",
+    packOro:"$210.000",
+    packPlatino:"$235.000",
 }
 
 
@@ -124,9 +124,9 @@ export const primerAnioLinks={
 }
 
 export const primerAnioPrecios={
-    packPlata:"$140.000",
-    packOro:"$190.000",
-    packPlatino:"$210.000",
+    packPlata:"$180.000",
+    packOro:"$250.000",
+    packPlatino:"$275.000",
 }
 
 
