@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { fotosNewBorn, newBornLinks, newBornPrecios } from '../../environment';
 import { Sesion } from '../sesion/sesion';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-NewBorn',
@@ -18,13 +19,20 @@ export class NewBornComponent extends Sesion implements OnInit {
   precioPlatino!:string;
   listaDeFotos!:string[];
   constructor(
-    modalService: NgbModal
+    modalService: NgbModal,
+      private title: Title,
+      private meta: Meta
   ){ super(modalService)}
 
   async ngOnInit() {
+    this.title.setTitle('Fotografías NewBorn | Guillermina Bertoya');
+    this.meta.updateTag({
+      name: 'NewBorn',
+      content: 'Sesiones profesionales de fotografía NewBorn en Caballito, Buenos Aires. Capturamos recuerdos únicos de tu bebé recién nacido.'
+    });
     this.setLinks();
     await this.setFotos();
-    console.log(this.listaDeFotos)
+    console.log(this.listaDeFotos);
   }
 
   setLinks(){

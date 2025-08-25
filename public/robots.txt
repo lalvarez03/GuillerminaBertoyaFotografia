@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guillerminabertoyafotografia.com.ar/sitemap.xml

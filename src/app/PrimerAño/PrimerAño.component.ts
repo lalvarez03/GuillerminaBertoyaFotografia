@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Sesion } from '../sesion/sesion';
 import { fotosPrimerAnio, primerAnioLinks, primerAnioPrecios } from '../../environment';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-PrimerAño',
@@ -18,13 +19,20 @@ export class PrimerAñoComponent extends Sesion implements OnInit {
   precioPlatino!:string;
   listaDeFotos!:string[];
   constructor(
-      modalService: NgbModal
+      modalService: NgbModal,
+      private title: Title,
+      private meta: Meta
     ){ super(modalService)}
 
   async ngOnInit() {
+    this.title.setTitle('Fotografías Primer Año | Guillermina Bertoya');
+    this.meta.updateTag({
+      name: 'PrimerAnio',
+      content: 'Sesiones profesionales de fotografía Primer Año en Caballito, Buenos Aires. Capturamos recuerdos únicos de tu bebbé de un año.'
+    });
     this.setLinks();
     await this.setFotos();
-    console.log(this.listaDeFotos)
+    console.log(this.listaDeFotos);
   }
 
   setLinks(){
